@@ -57,6 +57,25 @@ describe('loginWithPassword', () => {
     expect(calledUrl).toBe(fqdnLoginUrl);
   });
 
+  it('honours an explicit baseUrl override, including path prefixes (issue #15)', async () => {
+    const pathedLoginUrl = 'https://td.myuniversity.edu/TDWebApi/api/auth/login';
+    let calledUrl = '';
+
+    server.use(
+      http.post(pathedLoginUrl, () => new HttpResponse('pathed-jwt', { status: 200 })),
+      http.post(`${fqdnBaseUrl}/api/auth/login`, () => new HttpResponse('wrong-origin', { status: 200 })),
+    );
+
+    const provider = loginWithPassword({
+      tenant: fqdnTenant,
+      baseUrl: 'https://td.myuniversity.edu/TDWebApi',
+      username: 'u',
+      password: 'p',
+    });
+    await expect(provider()).resolves.toBe('pathed-jwt');
+    expect(calledUrl).toBe('');
+  });
+
   it('uses sandbox URL when environment is sandbox', async () => {
     const sandboxLoginUrl = `https://${tenant}-sandbox.teamdynamix.com/api/auth/login`;
     let calledUrl = '';
@@ -107,6 +126,23 @@ describe('loginWithServiceAccount', () => {
 
     const provider = loginWithServiceAccount({ tenant, beid: 'beid-42', webServicesKey: 'wsk-ey' });
     await expect(provider()).resolves.toBe('admin-jwt');
+  });
+
+  it('honours an explicit baseUrl override, including path prefixes (issue #15)', async () => {
+    const pathedAdminUrl = 'https://td.myuniversity.edu/TDWebApi/api/auth/loginadmin';
+
+    server.use(
+      http.post(pathedAdminUrl, () => new HttpResponse('pathed-admin-jwt', { status: 200 })),
+      http.post(`${fqdnBaseUrl}/api/auth/loginadmin`, () => new HttpResponse('wrong-origin', { status: 200 })),
+    );
+
+    const provider = loginWithServiceAccount({
+      tenant: fqdnTenant,
+      baseUrl: 'https://td.myuniversity.edu/TDWebApi/',
+      beid: 'b',
+      webServicesKey: 'k',
+    });
+    await expect(provider()).resolves.toBe('pathed-admin-jwt');
   });
 
   it('throws TeamDynamixClientError on non-OK response', async () => {

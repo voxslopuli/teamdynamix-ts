@@ -2,6 +2,11 @@ import { TeamDynamixClientError } from './errors.js';
 
 interface AuthBaseConfig {
   tenant: string;
+  /**
+   * Explicit API base URL (e.g. `https://host/TDWebApi`). Takes precedence over the
+   * tenant-derived origin and supports deployments mounted under a path prefix.
+   */
+  baseUrl?: string;
   environment?: 'production' | 'sandbox';
 }
 
@@ -23,6 +28,10 @@ const toBaseUrl = (tenant: string, environment: 'production' | 'sandbox'): strin
   return environment === 'sandbox' ? `https://${tenant}-sandbox.teamdynamix.com` : `https://${tenant}.teamdynamix.com`;
 };
 
+/** Resolves the auth origin: explicit baseUrl wins over the tenant-derived origin. */
+const resolveBaseUrl = (config: AuthBaseConfig, environment: 'production' | 'sandbox'): string =>
+  config.baseUrl ? config.baseUrl.replace(/\/+$/, '') : toBaseUrl(config.tenant, environment);
+
 /**
  * Creates a token provider that authenticates with a TeamDynamix username and password.
  *
@@ -41,18 +50,20 @@ const toBaseUrl = (tenant: string, environment: 'production' | 'sandbox'): strin
  * });
  * ```
  *
- * For custom FQDNs pass the full hostname as `tenant` (the `environment` option is ignored):
+ * For custom FQDNs pass the full hostname as `tenant` (the `environment` option is ignored).
+ * For deployments mounted under a path prefix pass `baseUrl` (e.g. `https://host/TDWebApi`):
  * ```ts
  * loginWithPassword({
  *   tenant: 'td.myuniversity.edu',
+ *   baseUrl: 'https://td.myuniversity.edu/TDWebApi',
  *   username: '...',
  *   password: '...',
  * })
  * ```
  */
 export const loginWithPassword = (config: PasswordAuthConfig): (() => Promise<string>) => {
-  const { username, password, tenant, environment } = config;
-  const baseUrl = toBaseUrl(tenant, environment ?? 'production');
+  const { username, password } = config;
+  const baseUrl = resolveBaseUrl(config, config.environment ?? 'production');
 
   return async (): Promise<string> => {
     const resp = await fetch(`${baseUrl}/api/auth/login`, {
@@ -115,18 +126,12 @@ export const createTokenProviderFromJWT = (jwt: string): (() => string) => {
  * });
  * ```
  *
- * For custom FQDNs pass the full hostname as `tenant` (the `environment` option is ignored):
- * ```ts
- * loginWithServiceAccount({
- *   tenant: 'td.myuniversity.edu',
- *   beid: '...',
- *   webServicesKey: '...',
- * })
- * ```
+ * For custom FQDNs pass the full hostname as `tenant` (the `environment` option is ignored).
+ * For deployments mounted under a path prefix pass `baseUrl` (e.g. `https://host/TDWebApi`).
  */
 export const loginWithServiceAccount = (config: ServiceAccountAuthConfig): (() => Promise<string>) => {
-  const { beid, webServicesKey, tenant, environment } = config;
-  const baseUrl = toBaseUrl(tenant, environment ?? 'production');
+  const { beid, webServicesKey } = config;
+  const baseUrl = resolveBaseUrl(config, config.environment ?? 'production');
 
   return async (): Promise<string> => {
     const resp = await fetch(`${baseUrl}/api/auth/loginadmin`, {

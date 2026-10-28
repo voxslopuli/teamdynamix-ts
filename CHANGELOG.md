@@ -1,3 +1,7 @@
+## v0.2.0 - 2026-10-28
+
+**Full Changelog**: https://github.com/voxslopuli/teamdynamix-ts/compare/v0.1.5...v0.2.0
+
 ## v0.1.5 - 2026-09-14
 
 **Full Changelog**: https://github.com/selfagency/teamdynamix-ts/compare/v0.1.4...v0.1.5

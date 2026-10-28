@@ -4,7 +4,7 @@
 
 A **secure, Node-first TypeScript client** for the [TeamDynamix Web API](https://api.teamdynamix.com/help). It wraps the full REST surface with type-safe entry points, runtime request/response validation, automatic retry with backoff, and auth helpers that handle JWT lifecycle.
 
-Packaged as `@selfagency/teamdynamix-ts` on npm.
+Packaged as `@voxslopuli/teamdynamix-ts` on npm.
 
 ## Architecture
 

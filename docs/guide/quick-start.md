@@ -3,9 +3,9 @@
 ## Install
 
 ```bash
-npm install @selfagency/teamdynamix-ts
+npm install @voxslopuli/teamdynamix-ts
 # or
-pnpm add @selfagency/teamdynamix-ts
+pnpm add @voxslopuli/teamdynamix-ts
 ```
 
 ## Pick an auth method

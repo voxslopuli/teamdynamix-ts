@@ -5,7 +5,7 @@ How to build, test, and contribute to `teamdynamix-ts`.
 ## Setup
 
 ```bash
-git clone https://github.com/selfagency/teamdynamix-ts
+git clone https://github.com/voxslopuli/teamdynamix-ts
 cd teamdynamix-ts
 pnpm install
 ```
@@ -125,7 +125,7 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
-The [Release workflow](https://github.com/selfagency/teamdynamix-ts/blob/main/.github/workflows/release.yml) handles:
+The [Release workflow](https://github.com/voxslopuli/teamdynamix-ts/blob/main/.github/workflows/release.yml) handles:
 
 1. CI checks pass gate
 2. `pnpm build`

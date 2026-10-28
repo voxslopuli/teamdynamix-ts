@@ -2,7 +2,7 @@
 
 ## Package exports
 
-Everything exported from `@selfagency/teamdynamix-ts`:
+Everything exported from `@voxslopuli/teamdynamix-ts`:
 
 ### Client
 

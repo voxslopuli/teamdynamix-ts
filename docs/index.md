@@ -14,7 +14,7 @@ hero:
       link: /guide/sdk-domains
     - theme: alt
       text: GitHub
-      link: https://github.com/selfagency/teamdynamix-ts
+      link: https://github.com/voxslopuli/teamdynamix-ts
 
 features:
   - title: Type-safe SDK

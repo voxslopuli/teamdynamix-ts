@@ -1,5 +1,5 @@
 {
-  "name": "@selfagency/teamdynamix-ts",
+  "name": "@voxslopuli/teamdynamix-ts",
   "version": "0.1.5",
   "private": false,
   "description": "An open source TypeScript client for the TeamDynamix API.",
@@ -11,15 +11,15 @@
     "teamdynamix",
     "ticketing"
   ],
-  "homepage": "https://github.com/selfagency/teamdynamix-ts",
+  "homepage": "https://github.com/voxslopuli/teamdynamix-ts",
   "bugs": {
-    "url": "https://github.com/selfagency/teamdynamix-ts/issues"
+    "url": "https://github.com/voxslopuli/teamdynamix-ts/issues"
   },
   "license": "MIT",
   "author": "Daniel Sieradski <daniel@self.agency>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/selfagency/teamdynamix-ts.git"
+    "url": "git+https://github.com/voxslopuli/teamdynamix-ts.git"
   },
   "type": "module",
   "main": "index.js",
@@ -73,7 +73,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs,mts,cts}": [
-      "oxlint --fix",
+      "oxlint --fix --no-error-on-unmatched-pattern",
       "oxfmt --no-error-on-unmatched-pattern"
     ],
     "*.{json,jsonc,yaml,yml}": "oxfmt --no-error-on-unmatched-pattern",

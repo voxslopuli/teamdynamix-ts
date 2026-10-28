@@ -1,13 +1,13 @@
 # teamdynamix-ts
 
-[![CI](https://github.com/selfagency/teamdynamix-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/selfagency/teamdynamix-ts/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/selfagency/teamdynamix-ts/graph/badge.svg?token=TbW25stfHD)](https://codecov.io/gh/selfagency/teamdynamix-ts)
-[![npm](https://img.shields.io/npm/v/%40selfagency%2Fteamdynamix-ts)](https://www.npmjs.com/package/@selfagency/teamdynamix-ts)
+[![CI](https://github.com/voxslopuli/teamdynamix-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/voxslopuli/teamdynamix-ts/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/voxslopuli/teamdynamix-ts/graph/badge.svg?token=TbW25stfHD)](https://codecov.io/gh/voxslopuli/teamdynamix-ts)
+[![npm](https://img.shields.io/npm/v/%40voxslopuli%2Fteamdynamix-ts)](https://www.npmjs.com/package/@voxslopuli/teamdynamix-ts)
 
 **Type-safe TeamDynamix Web API client for Node.js** — auto-generated reads, curated mutations, runtime validation, and auth helpers.
 
 ```bash
-npm install @selfagency/teamdynamix-ts
+npm install @voxslopuli/teamdynamix-ts
 ```
 
 ```ts

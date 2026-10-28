@@ -11,7 +11,7 @@ export default defineConfig({
       { text: 'Guide', link: '/guide/' },
       { text: 'API', link: '/api/' },
       { text: 'Developer', link: '/developer/' },
-      { text: 'GitHub', link: 'https://github.com/selfagency/teamdynamix-ts' },
+      { text: 'GitHub', link: 'https://github.com/voxslopuli/teamdynamix-ts' },
     ],
     sidebar: {
       '/guide/': [
@@ -47,9 +47,9 @@ export default defineConfig({
         },
       ],
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/selfagency/teamdynamix-ts' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/voxslopuli/teamdynamix-ts' }],
     editLink: {
-      pattern: 'https://github.com/selfagency/teamdynamix-ts/edit/main/docs/:path',
+      pattern: 'https://github.com/voxslopuli/teamdynamix-ts/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
     search: {

@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'teamdynamix-ts',
   description: 'Documentation for the TeamDynamix TypeScript client and generation pipeline.',
   base: '/',
+  sitemap: { hostname: 'https://teamdynamix-ts.voxslopuli.org' },
   lastUpdated: true,
   cleanUrls: true,
   themeConfig: {

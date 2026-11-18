@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-08T18:39:42.163Z",
+  "generatedAt": "2026-11-18T21:10:09.516Z",
   "source": "output/openapi-types.json",
   "copiedTo": "src/generated/openapi.json",
   "stats": {
-    "pathCount": 275,
-    "schemaCount": 36,
-    "routeCount": 396,
-    "readRouteCount": 156,
+    "pathCount": 397,
+    "schemaCount": 351,
+    "routeCount": 574,
+    "readRouteCount": 213,
     "domains": [
       "discovery",
       "tickets",

@@ -1,3 +1,12 @@
+## v0.3.0 - 2026-11-18
+
+- feat: SDK regenerated from the live deployment OpenAPI spec (#13) — 256 new operations, 74 removed, 322 preserved with byte-identical method names
+- **BREAKING:** the legacy `/api/projects/*` SDLC namespace is removed (the live API moved it under `/api/{appId}/projects/*`); `POST/DELETE /api/{appId}/assets/{assetId}/users/{resourceID}` also removed
+- 5 seldom-used DELETE method names shifted numeric collision suffixes (e.g. `appIdKnowledgebaseId3` → `appIdKnowledgebaseId4`)
+- spec sanitizer documents/applies the live-spec quirk fixes required for type generation (invalid `nullable`, parameter-level defaults, path/parameter name mismatches)
+
+**Full Changelog**: https://github.com/voxslopuli/teamdynamix-ts/compare/v0.2.1...v0.3.0
+
 ## v0.2.1 - 2026-10-28
 
 **Full Changelog**: https://github.com/voxslopuli/teamdynamix-ts/compare/v0.1.5...v0.2.1

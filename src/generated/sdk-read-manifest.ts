@@ -152,7 +152,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'time',
     methodName: 'daysoff',
     operationId: 'getDaysoff',
     path: '/api/daysoff',
@@ -172,7 +172,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'people',
     methodName: 'groupsId',
     operationId: 'getGroupsId',
     path: '/api/groups/{id}',
@@ -182,7 +182,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'people',
     methodName: 'groupsIdApplications',
     operationId: 'getGroupsIdApplications',
     path: '/api/groups/{id}/applications',
@@ -192,7 +192,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'people',
     methodName: 'groupsIdMembers',
     operationId: 'getGroupsIdMembers',
     path: '/api/groups/{id}/members',
@@ -812,7 +812,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'assets',
     methodName: 'appIdAssetsModels',
     operationId: 'getAppIdAssetsModels',
     path: '/api/{appId}/assets/models',
@@ -822,7 +822,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'assets',
     methodName: 'appIdAssetsModelsTypes',
     operationId: 'getAppIdAssetsModelsTypes',
     path: '/api/{appId}/assets/models/types',
@@ -832,7 +832,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'assets',
     methodName: 'appIdAssetsModelsTypesId',
     operationId: 'getAppIdAssetsModelsTypesId',
     path: '/api/{appId}/assets/models/types/{id}',
@@ -842,7 +842,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'assets',
     methodName: 'appIdAssetsModelsId',
     operationId: 'getAppIdAssetsModelsId',
     path: '/api/{appId}/assets/models/{id}',
@@ -862,7 +862,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'assets',
     methodName: 'appIdAssetsStatuses',
     operationId: 'getAppIdAssetsStatuses',
     path: '/api/{appId}/assets/statuses',
@@ -872,7 +872,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'assets',
     methodName: 'appIdAssetsStatusesId',
     operationId: 'getAppIdAssetsStatusesId',
     path: '/api/{appId}/assets/statuses/{id}',
@@ -972,7 +972,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbForms',
     operationId: 'getAppIdCmdbForms',
     path: '/api/{appId}/cmdb/forms',
@@ -982,7 +982,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbMaintenanceschedules',
     operationId: 'getAppIdCmdbMaintenanceschedules',
     path: '/api/{appId}/cmdb/maintenanceschedules',
@@ -992,7 +992,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbMaintenancewindows',
     operationId: 'getAppIdCmdbMaintenancewindows',
     path: '/api/{appId}/cmdb/maintenancewindows',
@@ -1002,7 +1002,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbMaintenancewindowsId',
     operationId: 'getAppIdCmdbMaintenancewindowsId',
     path: '/api/{appId}/cmdb/maintenancewindows/{id}',
@@ -1012,7 +1012,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbRelationshiptypes',
     operationId: 'getAppIdCmdbRelationshiptypes',
     path: '/api/{appId}/cmdb/relationshiptypes',
@@ -1022,7 +1022,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbRelationshiptypesId',
     operationId: 'getAppIdCmdbRelationshiptypesId',
     path: '/api/{appId}/cmdb/relationshiptypes/{id}',
@@ -1032,7 +1032,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbSearches',
     operationId: 'getAppIdCmdbSearches',
     path: '/api/{appId}/cmdb/searches',
@@ -1042,7 +1042,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbTypes',
     operationId: 'getAppIdCmdbTypes',
     path: '/api/{appId}/cmdb/types',
@@ -1052,7 +1052,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbTypesId',
     operationId: 'getAppIdCmdbTypesId',
     path: '/api/{appId}/cmdb/types/{id}',
@@ -1062,7 +1062,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbId',
     operationId: 'getAppIdCmdbId',
     path: '/api/{appId}/cmdb/{id}',
@@ -1072,7 +1072,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbIdArticles',
     operationId: 'getAppIdCmdbIdArticles',
     path: '/api/{appId}/cmdb/{id}/articles',
@@ -1082,7 +1082,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbIdFeed',
     operationId: 'getAppIdCmdbIdFeed',
     path: '/api/{appId}/cmdb/{id}/feed',
@@ -1092,7 +1092,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbIdRelationships',
     operationId: 'getAppIdCmdbIdRelationships',
     path: '/api/{appId}/cmdb/{id}/relationships',
@@ -1102,7 +1102,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'cmdb',
     methodName: 'appIdCmdbIdTickets',
     operationId: 'getAppIdCmdbIdTickets',
     path: '/api/{appId}/cmdb/{id}/tickets',
@@ -1142,7 +1142,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'knowledgeBase',
     methodName: 'appIdKnowledgebaseCategories',
     operationId: 'getAppIdKnowledgebaseCategories',
     path: '/api/{appId}/knowledgebase/categories',
@@ -1152,7 +1152,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'knowledgeBase',
     methodName: 'appIdKnowledgebaseCategoriesId',
     operationId: 'getAppIdKnowledgebaseCategoriesId',
     path: '/api/{appId}/knowledgebase/categories/{id}',
@@ -1162,7 +1162,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'knowledgeBase',
     methodName: 'appIdKnowledgebaseId',
     operationId: 'getAppIdKnowledgebaseId',
     path: '/api/{appId}/knowledgebase/{id}',
@@ -1172,7 +1172,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'knowledgeBase',
     methodName: 'appIdKnowledgebaseIdAssetscis',
     operationId: 'getAppIdKnowledgebaseIdAssetscis',
     path: '/api/{appId}/knowledgebase/{id}/assetscis',
@@ -1182,7 +1182,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'knowledgeBase',
     methodName: 'appIdKnowledgebaseIdRelated',
     operationId: 'getAppIdKnowledgebaseIdRelated',
     path: '/api/{appId}/knowledgebase/{id}/related',
@@ -1652,7 +1652,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'services',
     methodName: 'appIdServices',
     operationId: 'getAppIdServices',
     path: '/api/{appId}/services',
@@ -1662,7 +1662,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'services',
     methodName: 'appIdServicesCategories',
     operationId: 'getAppIdServicesCategories',
     path: '/api/{appId}/services/categories',
@@ -1672,7 +1672,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'services',
     methodName: 'appIdServicesCategoriesId',
     operationId: 'getAppIdServicesCategoriesId',
     path: '/api/{appId}/services/categories/{id}',
@@ -1682,7 +1682,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'services',
     methodName: 'appIdServicesCategoriesIdPermissions',
     operationId: 'getAppIdServicesCategoriesIdPermissions',
     path: '/api/{appId}/services/categories/{id}/permissions',
@@ -1692,7 +1692,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'services',
     methodName: 'appIdServicesId',
     operationId: 'getAppIdServicesId',
     path: '/api/{appId}/services/{id}',
@@ -1702,7 +1702,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'services',
     methodName: 'appIdServicesIdPermissions',
     operationId: 'getAppIdServicesIdPermissions',
     path: '/api/{appId}/services/{id}/permissions',
@@ -1712,7 +1712,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'services',
     methodName: 'appIdServicesIdRelatedarticles',
     operationId: 'getAppIdServicesIdRelatedarticles',
     path: '/api/{appId}/services/{id}/relatedarticles',
@@ -1722,7 +1722,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'services',
     methodName: 'appIdServicesServiceIdOfferingsId',
     operationId: 'getAppIdServicesServiceIdOfferingsId',
     path: '/api/{appId}/services/{serviceId}/offerings/{id}',
@@ -1732,7 +1732,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'services',
     methodName: 'appIdServicesServiceIdOfferingsIdRelatedarticles',
     operationId: 'getAppIdServicesServiceIdOfferingsIdRelatedarticles',
     path: '/api/{appId}/services/{serviceId}/offerings/{id}/relatedarticles',
@@ -1762,7 +1762,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsBlackoutwindows',
     operationId: 'getAppIdTicketsBlackoutwindows',
     path: '/api/{appId}/tickets/blackoutwindows',
@@ -1772,7 +1772,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsBlackoutwindowsId',
     operationId: 'getAppIdTicketsBlackoutwindowsId',
     path: '/api/{appId}/tickets/blackoutwindows/{id}',
@@ -1802,7 +1802,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsImpacts',
     operationId: 'getAppIdTicketsImpacts',
     path: '/api/{appId}/tickets/impacts',
@@ -1832,7 +1832,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsPriorities',
     operationId: 'getAppIdTicketsPriorities',
     path: '/api/{appId}/tickets/priorities',
@@ -1862,7 +1862,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsSearches',
     operationId: 'getAppIdTicketsSearches',
     path: '/api/{appId}/tickets/searches',
@@ -1892,7 +1892,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsSources',
     operationId: 'getAppIdTicketsSources',
     path: '/api/{appId}/tickets/sources',
@@ -1942,7 +1942,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsTypes',
     operationId: 'getAppIdTicketsTypes',
     path: '/api/{appId}/tickets/types',
@@ -1952,7 +1952,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsTypesId',
     operationId: 'getAppIdTicketsTypesId',
     path: '/api/{appId}/tickets/types/{id}',
@@ -1962,7 +1962,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsUrgencies',
     operationId: 'getAppIdTicketsUrgencies',
     path: '/api/{appId}/tickets/urgencies',
@@ -2072,7 +2072,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsTicketIdMaintenanceActivities',
     operationId: 'getAppIdTicketsTicketIdMaintenanceActivities',
     path: '/api/{appId}/tickets/{ticketId}/MaintenanceActivities',
@@ -2082,7 +2082,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsTicketIdMaintenanceActivitiesId',
     operationId: 'getAppIdTicketsTicketIdMaintenanceActivitiesId',
     path: '/api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}',
@@ -2092,7 +2092,7 @@ export const SDK_READ_ROUTE_MANIFEST = [
     destructive: false,
   },
   {
-    domain: 'referenceData',
+    domain: 'tickets',
     methodName: 'appIdTicketsTicketIdMaintenanceActivitiesIdFeed',
     operationId: 'getAppIdTicketsTicketIdMaintenanceActivitiesIdFeed',
     path: '/api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}/feed',

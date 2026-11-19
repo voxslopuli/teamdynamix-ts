@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { SDK_READ_ROUTE_MANIFEST } from '../../generated/sdk-read-manifest.js';
+import { SDK_ROUTE_MANIFEST } from '../../generated/sdk-routes.js';
 import type { TeamDynamixFetchClient } from '../client.js';
 import { appIdSchema, confirmTrueSchema, searchTextSchema } from '../schemas/index.js';
 import { executeSdkRoute } from './request.js';
@@ -41,8 +41,11 @@ const createReadDomains = (client: TeamDynamixFetchClient): TeamDynamixSdkReadDo
     referenceData: {},
   };
 
-  for (const route of SDK_READ_ROUTE_MANIFEST) {
+  for (const route of SDK_ROUTE_MANIFEST) {
     const domain = domains[route.domain] as SdkReadDomain;
+    // Every generated route (GET and POST/PUT/PATCH/DELETE alike) is exposed as
+    // a domain method; the hand-written mutation helpers below layer curated
+    // input validation on top.
     domain[route.methodName] = async options =>
       executeSdkRoute(client, route, options as Record<string, unknown> | undefined);
   }
@@ -534,71 +537,84 @@ const createKnowledgeBaseMutations = (client: TeamDynamixFetchClient): Knowledge
 
 const createProjectMutations = (client: TeamDynamixFetchClient): ProjectMutations => ({
   async createIssue(input) {
-    const parsed = z.object({ body: z.unknown() }).parse(input);
+    // Live API moved project issue creation under the app-scoped namespace.
+    const parsed = z.object({ appId: appIdSchema, body: z.unknown() }).parse(input);
     return executeSdkRoute(
       client,
       {
         domain: 'projects',
         methodName: 'createIssue',
-        operationId: 'postProjectsIssues',
-        path: '/api/projects/issues',
+        operationId: 'postAppIdProjectsIssues',
+        path: '/api/{appId}/projects/issues',
         httpMethod: 'POST',
         tags: ['Issues'],
         mutating: true,
         destructive: false,
       },
-      { body: parsed.body },
+      {
+        params: { path: { appId: parsed.appId } },
+        body: parsed.body,
+      },
     );
   },
   async createRisk(input) {
-    const parsed = z.object({ body: z.unknown() }).parse(input);
+    const parsed = z.object({ appId: appIdSchema, body: z.unknown() }).parse(input);
     return executeSdkRoute(
       client,
       {
         domain: 'projects',
         methodName: 'createRisk',
-        operationId: 'postProjectsRisks',
-        path: '/api/projects/risks',
+        operationId: 'postAppIdProjectsRisks',
+        path: '/api/{appId}/projects/risks',
         httpMethod: 'POST',
         tags: ['Risks'],
         mutating: true,
         destructive: false,
       },
-      { body: parsed.body },
+      {
+        params: { path: { appId: parsed.appId } },
+        body: parsed.body,
+      },
     );
   },
   async searchIssues(input) {
-    const parsed = z.object({ projectId: nonEmptyIdSchema }).parse(input);
+    const parsed = z.object({ appId: appIdSchema, projectId: nonEmptyIdSchema }).parse(input);
     return executeSdkRoute(
       client,
       {
         domain: 'projects',
         methodName: 'searchIssues',
-        operationId: 'postProjectsIssuesSearch',
-        path: '/api/projects/issues/search',
+        operationId: 'postAppIdProjectsIssuesSearch',
+        path: '/api/{appId}/projects/issues/search',
         httpMethod: 'POST',
         tags: ['Issues'],
         mutating: true,
         destructive: false,
       },
-      { params: { query: { ProjectIDs: String(parsed.projectId) } } },
+      {
+        params: { path: { appId: parsed.appId }, query: { ProjectIDs: String(parsed.projectId) } },
+      },
     );
   },
   async updateIssue(input) {
-    const parsed = z.object({ projectId: nonEmptyIdSchema, issueId: nonEmptyIdSchema }).parse(input);
+    const parsed = z
+      .object({ appId: appIdSchema, projectId: nonEmptyIdSchema, issueId: nonEmptyIdSchema })
+      .parse(input);
     return executeSdkRoute(
       client,
       {
         domain: 'projects',
         methodName: 'updateIssue',
-        operationId: 'postProjectsProjectIdIssuesIssueId',
-        path: '/api/projects/{projectId}/issues/{issueId}',
+        operationId: 'postAppIdProjectsProjectIdIssuesIssueId',
+        path: '/api/{appId}/projects/{projectId}/issues/{issueId}',
         httpMethod: 'POST',
         tags: ['Issues'],
         mutating: true,
         destructive: false,
       },
-      { params: { path: { projectId: parsed.projectId, issueId: parsed.issueId } } },
+      {
+        params: { path: { appId: parsed.appId, projectId: parsed.projectId, issueId: parsed.issueId } },
+      },
     );
   },
 });

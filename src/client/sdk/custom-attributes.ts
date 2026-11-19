@@ -240,14 +240,16 @@ export const createCustomAttributesRegistry = (client: TeamDynamixFetchClient) =
       {
         domain: 'tickets',
         methodName: 'getCustomAttributes',
-        operationId: 'getAppIdTicketsCustomAttributes',
-        path: '/api/{appId}/tickets/customattributes',
+        operationId: 'getAttributesCustom',
+        path: '/api/attributes/custom',
         httpMethod: 'GET',
-        tags: ['TicketCustomAttributes'],
+        tags: ['Attributes'],
         mutating: false,
         destructive: false,
       },
-      { params: { path: { appId: parsed.appId } } },
+      // Live API: custom-attribute definitions moved to the global attributes
+      // resource; componentId 9 = Ticket.
+      { params: { query: { componentId: 9, appId: parsed.appId } } },
     );
   },
 
@@ -266,14 +268,15 @@ export const createCustomAttributesRegistry = (client: TeamDynamixFetchClient) =
       {
         domain: 'assets',
         methodName: 'getCustomAttributes',
-        operationId: 'getAppIdAssetsCustomAttributes',
-        path: '/api/{appId}/assets/customattributes',
+        operationId: 'getAttributesCustom2',
+        path: '/api/attributes/custom',
         httpMethod: 'GET',
-        tags: ['AssetCustomAttributes'],
+        tags: ['Attributes'],
         mutating: false,
         destructive: false,
       },
-      { params: { path: { appId: parsed.appId } } },
+      // Live API: componentId 27 = Asset.
+      { params: { query: { componentId: 27, appId: parsed.appId } } },
     );
   },
 });

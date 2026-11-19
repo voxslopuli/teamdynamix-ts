@@ -330,7 +330,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "time",
     "methodName": "daysoff",
     "operationId": "getDaysoff",
     "path": "/api/daysoff",
@@ -341,7 +341,7 @@
   },
   {
     "domain": "referenceData",
-    "methodName": "daysoff2",
+    "methodName": "daysoff",
     "operationId": "postDaysoff",
     "path": "/api/daysoff",
     "httpMethod": "POST",
@@ -480,7 +480,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "groups",
     "operationId": "postGroups",
     "path": "/api/groups",
@@ -490,7 +490,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "groupsSearch",
     "operationId": "postGroupsSearch",
     "path": "/api/groups/search",
@@ -500,7 +500,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "groupsId",
     "operationId": "getGroupsId",
     "path": "/api/groups/{id}",
@@ -510,7 +510,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "groupsId2",
     "operationId": "putGroupsId",
     "path": "/api/groups/{id}",
@@ -521,7 +521,7 @@
   },
   {
     "domain": "referenceData",
-    "methodName": "groupsId3",
+    "methodName": "groupsId",
     "operationId": "deleteGroupsId",
     "path": "/api/groups/{id}",
     "httpMethod": "DELETE",
@@ -530,7 +530,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "groupsIdApplications",
     "operationId": "getGroupsIdApplications",
     "path": "/api/groups/{id}/applications",
@@ -540,7 +540,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "groupsIdApplications2",
     "operationId": "postGroupsIdApplications",
     "path": "/api/groups/{id}/applications",
@@ -550,7 +550,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "groupsIdApplications3",
     "operationId": "deleteGroupsIdApplications",
     "path": "/api/groups/{id}/applications",
@@ -560,7 +560,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "groupsIdMembers",
     "operationId": "getGroupsIdMembers",
     "path": "/api/groups/{id}/members",
@@ -570,7 +570,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "groupsIdMembers2",
     "operationId": "postGroupsIdMembers",
     "path": "/api/groups/{id}/members",
@@ -580,7 +580,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "groupsIdMembers3",
     "operationId": "deleteGroupsIdMembers",
     "path": "/api/groups/{id}/members",
@@ -810,7 +810,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "peopleBulkApplydashboardTemplateDashboardId",
     "operationId": "postPeopleBulkApplydashboardTemplateDashboardId",
     "path": "/api/people/bulk/applydashboard/{templateDashboardId}",
@@ -820,7 +820,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "peopleBulkApplydesktopTemplateDesktopId",
     "operationId": "postPeopleBulkApplydesktopTemplateDesktopId",
     "path": "/api/people/bulk/applydesktop/{templateDesktopId}",
@@ -830,7 +830,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "peopleBulkChangeacctdepts",
     "operationId": "postPeopleBulkChangeacctdepts",
     "path": "/api/people/bulk/changeacctdepts",
@@ -840,7 +840,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "peopleBulkChangeactivestatus",
     "operationId": "postPeopleBulkChangeactivestatus",
     "path": "/api/people/bulk/changeactivestatus",
@@ -850,7 +850,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "peopleBulkChangeapplications",
     "operationId": "postPeopleBulkChangeapplications",
     "path": "/api/people/bulk/changeapplications",
@@ -870,7 +870,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "peopleBulkChangeorgapplications",
     "operationId": "postPeopleBulkChangeorgapplications",
     "path": "/api/people/bulk/changeorgapplications",
@@ -880,7 +880,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "peopleBulkChangesecurityroleSecurityRoleId",
     "operationId": "postPeopleBulkChangesecurityroleSecurityRoleId",
     "path": "/api/people/bulk/changesecurityrole/{securityRoleId}",
@@ -920,7 +920,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "people",
     "methodName": "peopleBulkManagegroups",
     "operationId": "postPeopleBulkManagegroups",
     "path": "/api/people/bulk/managegroups",
@@ -2100,7 +2100,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdAssetsIntuneMap",
     "operationId": "putAppIdAssetsIntuneMap",
     "path": "/api/{appId}/assets/intune/map",
@@ -2110,7 +2110,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdAssetsIntuneAssetIdMap",
     "operationId": "putAppIdAssetsIntuneAssetIdMap",
     "path": "/api/{appId}/assets/intune/{assetId}/map",
@@ -2120,7 +2120,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsModels",
     "operationId": "getAppIdAssetsModels",
     "path": "/api/{appId}/assets/models",
@@ -2130,7 +2130,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsModels2",
     "operationId": "postAppIdAssetsModels",
     "path": "/api/{appId}/assets/models",
@@ -2140,7 +2140,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsModelsSearch",
     "operationId": "postAppIdAssetsModelsSearch",
     "path": "/api/{appId}/assets/models/search",
@@ -2150,7 +2150,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsModelsTypes",
     "operationId": "getAppIdAssetsModelsTypes",
     "path": "/api/{appId}/assets/models/types",
@@ -2160,7 +2160,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsModelsTypes2",
     "operationId": "postAppIdAssetsModelsTypes",
     "path": "/api/{appId}/assets/models/types",
@@ -2170,7 +2170,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsModelsTypesSearch",
     "operationId": "postAppIdAssetsModelsTypesSearch",
     "path": "/api/{appId}/assets/models/types/search",
@@ -2180,7 +2180,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsModelsTypesId",
     "operationId": "getAppIdAssetsModelsTypesId",
     "path": "/api/{appId}/assets/models/types/{id}",
@@ -2190,7 +2190,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsModelsTypesId2",
     "operationId": "putAppIdAssetsModelsTypesId",
     "path": "/api/{appId}/assets/models/types/{id}",
@@ -2200,7 +2200,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsModelsId",
     "operationId": "getAppIdAssetsModelsId",
     "path": "/api/{appId}/assets/models/{id}",
@@ -2210,7 +2210,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsModelsId2",
     "operationId": "putAppIdAssetsModelsId",
     "path": "/api/{appId}/assets/models/{id}",
@@ -2221,7 +2221,7 @@
   },
   {
     "domain": "referenceData",
-    "methodName": "appIdAssetsModelsId3",
+    "methodName": "appIdAssetsModelsId",
     "operationId": "patchAppIdAssetsModelsId",
     "path": "/api/{appId}/assets/models/{id}",
     "httpMethod": "PATCH",
@@ -2270,7 +2270,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsStatuses",
     "operationId": "getAppIdAssetsStatuses",
     "path": "/api/{appId}/assets/statuses",
@@ -2280,7 +2280,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsStatuses2",
     "operationId": "postAppIdAssetsStatuses",
     "path": "/api/{appId}/assets/statuses",
@@ -2290,7 +2290,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsStatusesSearch",
     "operationId": "postAppIdAssetsStatusesSearch",
     "path": "/api/{appId}/assets/statuses/search",
@@ -2300,7 +2300,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsStatusesId",
     "operationId": "getAppIdAssetsStatusesId",
     "path": "/api/{appId}/assets/statuses/{id}",
@@ -2310,7 +2310,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "assets",
     "methodName": "appIdAssetsStatusesId2",
     "operationId": "putAppIdAssetsStatusesId",
     "path": "/api/{appId}/assets/statuses/{id}",
@@ -2600,7 +2600,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdb",
     "operationId": "postAppIdCmdb",
     "path": "/api/{appId}/cmdb",
@@ -2610,7 +2610,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbForms",
     "operationId": "getAppIdCmdbForms",
     "path": "/api/{appId}/cmdb/forms",
@@ -2620,7 +2620,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbMaintenanceschedules",
     "operationId": "getAppIdCmdbMaintenanceschedules",
     "path": "/api/{appId}/cmdb/maintenanceschedules",
@@ -2630,7 +2630,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbMaintenanceschedulesSearch",
     "operationId": "postAppIdCmdbMaintenanceschedulesSearch",
     "path": "/api/{appId}/cmdb/maintenanceschedules/search",
@@ -2640,7 +2640,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbMaintenancewindows",
     "operationId": "getAppIdCmdbMaintenancewindows",
     "path": "/api/{appId}/cmdb/maintenancewindows",
@@ -2650,7 +2650,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbMaintenancewindows2",
     "operationId": "postAppIdCmdbMaintenancewindows",
     "path": "/api/{appId}/cmdb/maintenancewindows",
@@ -2660,7 +2660,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbMaintenancewindowsSearch",
     "operationId": "postAppIdCmdbMaintenancewindowsSearch",
     "path": "/api/{appId}/cmdb/maintenancewindows/search",
@@ -2670,7 +2670,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbMaintenancewindowsId",
     "operationId": "getAppIdCmdbMaintenancewindowsId",
     "path": "/api/{appId}/cmdb/maintenancewindows/{id}",
@@ -2680,7 +2680,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbMaintenancewindowsId2",
     "operationId": "putAppIdCmdbMaintenancewindowsId",
     "path": "/api/{appId}/cmdb/maintenancewindows/{id}",
@@ -2690,7 +2690,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbRelationshipsBulkadd",
     "operationId": "postAppIdCmdbRelationshipsBulkadd",
     "path": "/api/{appId}/cmdb/relationships/bulkadd",
@@ -2700,7 +2700,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbRelationshipsBulkdelete",
     "operationId": "postAppIdCmdbRelationshipsBulkdelete",
     "path": "/api/{appId}/cmdb/relationships/bulkdelete",
@@ -2710,7 +2710,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbRelationshiptypes",
     "operationId": "getAppIdCmdbRelationshiptypes",
     "path": "/api/{appId}/cmdb/relationshiptypes",
@@ -2720,7 +2720,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbRelationshiptypes2",
     "operationId": "postAppIdCmdbRelationshiptypes",
     "path": "/api/{appId}/cmdb/relationshiptypes",
@@ -2730,7 +2730,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbRelationshiptypesSearch",
     "operationId": "postAppIdCmdbRelationshiptypesSearch",
     "path": "/api/{appId}/cmdb/relationshiptypes/search",
@@ -2740,7 +2740,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbRelationshiptypesId",
     "operationId": "getAppIdCmdbRelationshiptypesId",
     "path": "/api/{appId}/cmdb/relationshiptypes/{id}",
@@ -2750,7 +2750,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbRelationshiptypesId2",
     "operationId": "putAppIdCmdbRelationshiptypesId",
     "path": "/api/{appId}/cmdb/relationshiptypes/{id}",
@@ -2760,7 +2760,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbSearch",
     "operationId": "postAppIdCmdbSearch",
     "path": "/api/{appId}/cmdb/search",
@@ -2780,7 +2780,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbSearches",
     "operationId": "getAppIdCmdbSearches",
     "path": "/api/{appId}/cmdb/searches",
@@ -2790,7 +2790,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbSearchesSearchIdResults",
     "operationId": "postAppIdCmdbSearchesSearchIdResults",
     "path": "/api/{appId}/cmdb/searches/{searchId}/results",
@@ -2800,7 +2800,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbTypes",
     "operationId": "getAppIdCmdbTypes",
     "path": "/api/{appId}/cmdb/types",
@@ -2810,7 +2810,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbTypes2",
     "operationId": "postAppIdCmdbTypes",
     "path": "/api/{appId}/cmdb/types",
@@ -2820,7 +2820,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbTypesSearch",
     "operationId": "postAppIdCmdbTypesSearch",
     "path": "/api/{appId}/cmdb/types/search",
@@ -2830,7 +2830,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbTypesId",
     "operationId": "getAppIdCmdbTypesId",
     "path": "/api/{appId}/cmdb/types/{id}",
@@ -2840,7 +2840,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbTypesId2",
     "operationId": "putAppIdCmdbTypesId",
     "path": "/api/{appId}/cmdb/types/{id}",
@@ -2850,7 +2850,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbId",
     "operationId": "getAppIdCmdbId",
     "path": "/api/{appId}/cmdb/{id}",
@@ -2860,7 +2860,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbId2",
     "operationId": "putAppIdCmdbId",
     "path": "/api/{appId}/cmdb/{id}",
@@ -2870,7 +2870,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbId3",
     "operationId": "patchAppIdCmdbId",
     "path": "/api/{appId}/cmdb/{id}",
@@ -2880,7 +2880,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbId4",
     "operationId": "deleteAppIdCmdbId",
     "path": "/api/{appId}/cmdb/{id}",
@@ -2890,7 +2890,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdArticles",
     "operationId": "getAppIdCmdbIdArticles",
     "path": "/api/{appId}/cmdb/{id}/articles",
@@ -2900,7 +2900,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdArticlesArticleId",
     "operationId": "postAppIdCmdbIdArticlesArticleId",
     "path": "/api/{appId}/cmdb/{id}/articles/{articleId}",
@@ -2910,7 +2910,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdArticlesArticleId2",
     "operationId": "deleteAppIdCmdbIdArticlesArticleId",
     "path": "/api/{appId}/cmdb/{id}/articles/{articleId}",
@@ -2920,7 +2920,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdAttachments",
     "operationId": "postAppIdCmdbIdAttachments",
     "path": "/api/{appId}/cmdb/{id}/attachments",
@@ -2940,7 +2940,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdFeed",
     "operationId": "getAppIdCmdbIdFeed",
     "path": "/api/{appId}/cmdb/{id}/feed",
@@ -2950,7 +2950,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdFeed2",
     "operationId": "postAppIdCmdbIdFeed",
     "path": "/api/{appId}/cmdb/{id}/feed",
@@ -2960,7 +2960,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdRelationships",
     "operationId": "getAppIdCmdbIdRelationships",
     "path": "/api/{appId}/cmdb/{id}/relationships",
@@ -2970,7 +2970,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdRelationships2",
     "operationId": "putAppIdCmdbIdRelationships",
     "path": "/api/{appId}/cmdb/{id}/relationships",
@@ -2980,7 +2980,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdRelationshipsRelationshipId",
     "operationId": "deleteAppIdCmdbIdRelationshipsRelationshipId",
     "path": "/api/{appId}/cmdb/{id}/relationships/{relationshipId}",
@@ -2990,7 +2990,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdTickets",
     "operationId": "getAppIdCmdbIdTickets",
     "path": "/api/{appId}/cmdb/{id}/tickets",
@@ -3000,7 +3000,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdTicketsTicketId",
     "operationId": "postAppIdCmdbIdTicketsTicketId",
     "path": "/api/{appId}/cmdb/{id}/tickets/{ticketId}",
@@ -3010,7 +3010,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "cmdb",
     "methodName": "appIdCmdbIdTicketsTicketId2",
     "operationId": "deleteAppIdCmdbIdTicketsTicketId",
     "path": "/api/{appId}/cmdb/{id}/tickets/{ticketId}",
@@ -3080,7 +3080,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebase",
     "operationId": "postAppIdKnowledgebase",
     "path": "/api/{appId}/knowledgebase",
@@ -3090,7 +3090,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseCategories",
     "operationId": "getAppIdKnowledgebaseCategories",
     "path": "/api/{appId}/knowledgebase/categories",
@@ -3100,7 +3100,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseCategories2",
     "operationId": "postAppIdKnowledgebaseCategories",
     "path": "/api/{appId}/knowledgebase/categories",
@@ -3110,7 +3110,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseCategoriesId",
     "operationId": "getAppIdKnowledgebaseCategoriesId",
     "path": "/api/{appId}/knowledgebase/categories/{id}",
@@ -3120,7 +3120,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseCategoriesId2",
     "operationId": "putAppIdKnowledgebaseCategoriesId",
     "path": "/api/{appId}/knowledgebase/categories/{id}",
@@ -3130,7 +3130,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseCategoriesId3",
     "operationId": "deleteAppIdKnowledgebaseCategoriesId",
     "path": "/api/{appId}/knowledgebase/categories/{id}",
@@ -3140,7 +3140,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseSearch",
     "operationId": "postAppIdKnowledgebaseSearch",
     "path": "/api/{appId}/knowledgebase/search",
@@ -3150,7 +3150,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseId",
     "operationId": "getAppIdKnowledgebaseId",
     "path": "/api/{appId}/knowledgebase/{id}",
@@ -3160,7 +3160,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseId2",
     "operationId": "putAppIdKnowledgebaseId",
     "path": "/api/{appId}/knowledgebase/{id}",
@@ -3171,7 +3171,7 @@
   },
   {
     "domain": "referenceData",
-    "methodName": "appIdKnowledgebaseId3",
+    "methodName": "appIdKnowledgebaseId",
     "operationId": "patchAppIdKnowledgebaseId",
     "path": "/api/{appId}/knowledgebase/{id}",
     "httpMethod": "PATCH",
@@ -3180,8 +3180,8 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
-    "methodName": "appIdKnowledgebaseId4",
+    "domain": "knowledgeBase",
+    "methodName": "appIdKnowledgebaseId3",
     "operationId": "deleteAppIdKnowledgebaseId",
     "path": "/api/{appId}/knowledgebase/{id}",
     "httpMethod": "DELETE",
@@ -3190,7 +3190,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseIdAssetscis",
     "operationId": "getAppIdKnowledgebaseIdAssetscis",
     "path": "/api/{appId}/knowledgebase/{id}/assetscis",
@@ -3200,7 +3200,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseIdAttachments",
     "operationId": "postAppIdKnowledgebaseIdAttachments",
     "path": "/api/{appId}/knowledgebase/{id}/attachments",
@@ -3210,7 +3210,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseIdRelated",
     "operationId": "getAppIdKnowledgebaseIdRelated",
     "path": "/api/{appId}/knowledgebase/{id}/related",
@@ -3220,7 +3220,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseIdRelatedRelatedArticleId",
     "operationId": "postAppIdKnowledgebaseIdRelatedRelatedArticleId",
     "path": "/api/{appId}/knowledgebase/{id}/related/{relatedArticleId}",
@@ -3230,7 +3230,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "knowledgeBase",
     "methodName": "appIdKnowledgebaseIdRelatedRelatedArticleId2",
     "operationId": "deleteAppIdKnowledgebaseIdRelatedRelatedArticleId",
     "path": "/api/{appId}/knowledgebase/{id}/related/{relatedArticleId}",
@@ -4450,7 +4450,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServices",
     "operationId": "getAppIdServices",
     "path": "/api/{appId}/services",
@@ -4460,7 +4460,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServices2",
     "operationId": "postAppIdServices",
     "path": "/api/{appId}/services",
@@ -4470,7 +4470,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesCategories",
     "operationId": "getAppIdServicesCategories",
     "path": "/api/{appId}/services/categories",
@@ -4480,7 +4480,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesCategories2",
     "operationId": "postAppIdServicesCategories",
     "path": "/api/{appId}/services/categories",
@@ -4490,7 +4490,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesCategoriesId",
     "operationId": "getAppIdServicesCategoriesId",
     "path": "/api/{appId}/services/categories/{id}",
@@ -4500,7 +4500,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesCategoriesId2",
     "operationId": "putAppIdServicesCategoriesId",
     "path": "/api/{appId}/services/categories/{id}",
@@ -4510,7 +4510,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesCategoriesId3",
     "operationId": "deleteAppIdServicesCategoriesId",
     "path": "/api/{appId}/services/categories/{id}",
@@ -4520,7 +4520,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesCategoriesIdPermissions",
     "operationId": "getAppIdServicesCategoriesIdPermissions",
     "path": "/api/{appId}/services/categories/{id}/permissions",
@@ -4530,7 +4530,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesCategoriesIdPermissions2",
     "operationId": "putAppIdServicesCategoriesIdPermissions",
     "path": "/api/{appId}/services/categories/{id}/permissions",
@@ -4540,7 +4540,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesOfferingsSearch",
     "operationId": "postAppIdServicesOfferingsSearch",
     "path": "/api/{appId}/services/offerings/search",
@@ -4550,7 +4550,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesSearch",
     "operationId": "postAppIdServicesSearch",
     "path": "/api/{appId}/services/search",
@@ -4560,7 +4560,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesId",
     "operationId": "getAppIdServicesId",
     "path": "/api/{appId}/services/{id}",
@@ -4570,7 +4570,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesId2",
     "operationId": "putAppIdServicesId",
     "path": "/api/{appId}/services/{id}",
@@ -4581,7 +4581,7 @@
   },
   {
     "domain": "referenceData",
-    "methodName": "appIdServicesId3",
+    "methodName": "appIdServicesId",
     "operationId": "patchAppIdServicesId",
     "path": "/api/{appId}/services/{id}",
     "httpMethod": "PATCH",
@@ -4590,8 +4590,8 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
-    "methodName": "appIdServicesId4",
+    "domain": "services",
+    "methodName": "appIdServicesId3",
     "operationId": "deleteAppIdServicesId",
     "path": "/api/{appId}/services/{id}",
     "httpMethod": "DELETE",
@@ -4600,7 +4600,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesIdAttachments",
     "operationId": "postAppIdServicesIdAttachments",
     "path": "/api/{appId}/services/{id}/attachments",
@@ -4610,7 +4610,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesIdPermissions",
     "operationId": "getAppIdServicesIdPermissions",
     "path": "/api/{appId}/services/{id}/permissions",
@@ -4620,7 +4620,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesIdPermissions2",
     "operationId": "putAppIdServicesIdPermissions",
     "path": "/api/{appId}/services/{id}/permissions",
@@ -4630,7 +4630,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesIdRelatedarticles",
     "operationId": "getAppIdServicesIdRelatedarticles",
     "path": "/api/{appId}/services/{id}/relatedarticles",
@@ -4640,7 +4640,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesIdRelatedarticlesRelatedArticleId",
     "operationId": "postAppIdServicesIdRelatedarticlesRelatedArticleId",
     "path": "/api/{appId}/services/{id}/relatedarticles/{relatedArticleId}",
@@ -4650,7 +4650,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesIdRelatedarticlesRelatedArticleId2",
     "operationId": "deleteAppIdServicesIdRelatedarticlesRelatedArticleId",
     "path": "/api/{appId}/services/{id}/relatedarticles/{relatedArticleId}",
@@ -4660,7 +4660,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesServiceIdOfferings",
     "operationId": "postAppIdServicesServiceIdOfferings",
     "path": "/api/{appId}/services/{serviceId}/offerings",
@@ -4670,7 +4670,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesServiceIdOfferingsId",
     "operationId": "getAppIdServicesServiceIdOfferingsId",
     "path": "/api/{appId}/services/{serviceId}/offerings/{id}",
@@ -4680,7 +4680,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesServiceIdOfferingsId2",
     "operationId": "putAppIdServicesServiceIdOfferingsId",
     "path": "/api/{appId}/services/{serviceId}/offerings/{id}",
@@ -4691,7 +4691,7 @@
   },
   {
     "domain": "referenceData",
-    "methodName": "appIdServicesServiceIdOfferingsId3",
+    "methodName": "appIdServicesServiceIdOfferingsId",
     "operationId": "patchAppIdServicesServiceIdOfferingsId",
     "path": "/api/{appId}/services/{serviceId}/offerings/{id}",
     "httpMethod": "PATCH",
@@ -4700,8 +4700,8 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
-    "methodName": "appIdServicesServiceIdOfferingsId4",
+    "domain": "services",
+    "methodName": "appIdServicesServiceIdOfferingsId3",
     "operationId": "deleteAppIdServicesServiceIdOfferingsId",
     "path": "/api/{appId}/services/{serviceId}/offerings/{id}",
     "httpMethod": "DELETE",
@@ -4710,7 +4710,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesServiceIdOfferingsIdAttachments",
     "operationId": "postAppIdServicesServiceIdOfferingsIdAttachments",
     "path": "/api/{appId}/services/{serviceId}/offerings/{id}/attachments",
@@ -4720,7 +4720,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesServiceIdOfferingsIdRelatedarticles",
     "operationId": "getAppIdServicesServiceIdOfferingsIdRelatedarticles",
     "path": "/api/{appId}/services/{serviceId}/offerings/{id}/relatedarticles",
@@ -4730,7 +4730,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesServiceIdOfferingsIdRelatedarticlesRelatedArticleId",
     "operationId": "postAppIdServicesServiceIdOfferingsIdRelatedarticlesRelatedArticleId",
     "path": "/api/{appId}/services/{serviceId}/offerings/{id}/relatedarticles/{relatedArticleId}",
@@ -4740,7 +4740,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "services",
     "methodName": "appIdServicesServiceIdOfferingsIdRelatedarticlesRelatedArticleId2",
     "operationId": "deleteAppIdServicesServiceIdOfferingsIdRelatedarticlesRelatedArticleId",
     "path": "/api/{appId}/services/{serviceId}/offerings/{id}/relatedarticles/{relatedArticleId}",
@@ -4790,7 +4790,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsBlackoutwindows",
     "operationId": "getAppIdTicketsBlackoutwindows",
     "path": "/api/{appId}/tickets/blackoutwindows",
@@ -4800,7 +4800,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsBlackoutwindows2",
     "operationId": "postAppIdTicketsBlackoutwindows",
     "path": "/api/{appId}/tickets/blackoutwindows",
@@ -4810,7 +4810,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsBlackoutwindowsSearch",
     "operationId": "postAppIdTicketsBlackoutwindowsSearch",
     "path": "/api/{appId}/tickets/blackoutwindows/search",
@@ -4820,7 +4820,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsBlackoutwindowsId",
     "operationId": "getAppIdTicketsBlackoutwindowsId",
     "path": "/api/{appId}/tickets/blackoutwindows/{id}",
@@ -4830,7 +4830,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsBlackoutwindowsId2",
     "operationId": "putAppIdTicketsBlackoutwindowsId",
     "path": "/api/{appId}/tickets/blackoutwindows/{id}",
@@ -4860,7 +4860,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsImpacts",
     "operationId": "getAppIdTicketsImpacts",
     "path": "/api/{appId}/tickets/impacts",
@@ -4930,7 +4930,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsPriorities",
     "operationId": "getAppIdTicketsPriorities",
     "path": "/api/{appId}/tickets/priorities",
@@ -4980,7 +4980,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsSearches",
     "operationId": "getAppIdTicketsSearches",
     "path": "/api/{appId}/tickets/searches",
@@ -4990,7 +4990,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsSearchesSearchIdResults",
     "operationId": "postAppIdTicketsSearchesSearchIdResults",
     "path": "/api/{appId}/tickets/searches/{searchId}/results",
@@ -5070,7 +5070,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsSources",
     "operationId": "getAppIdTicketsSources",
     "path": "/api/{appId}/tickets/sources",
@@ -5150,7 +5150,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTypes",
     "operationId": "getAppIdTicketsTypes",
     "path": "/api/{appId}/tickets/types",
@@ -5160,7 +5160,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTypes2",
     "operationId": "postAppIdTicketsTypes",
     "path": "/api/{appId}/tickets/types",
@@ -5170,7 +5170,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTypesId",
     "operationId": "getAppIdTicketsTypesId",
     "path": "/api/{appId}/tickets/types/{id}",
@@ -5180,7 +5180,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTypesId2",
     "operationId": "putAppIdTicketsTypesId",
     "path": "/api/{appId}/tickets/types/{id}",
@@ -5190,7 +5190,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsUrgencies",
     "operationId": "getAppIdTicketsUrgencies",
     "path": "/api/{appId}/tickets/urgencies",
@@ -5590,7 +5590,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTicketIdMaintenanceActivities",
     "operationId": "getAppIdTicketsTicketIdMaintenanceActivities",
     "path": "/api/{appId}/tickets/{ticketId}/MaintenanceActivities",
@@ -5600,7 +5600,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTicketIdMaintenanceActivities2",
     "operationId": "postAppIdTicketsTicketIdMaintenanceActivities",
     "path": "/api/{appId}/tickets/{ticketId}/MaintenanceActivities",
@@ -5610,7 +5610,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTicketIdMaintenanceActivitiesId",
     "operationId": "getAppIdTicketsTicketIdMaintenanceActivitiesId",
     "path": "/api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}",
@@ -5620,7 +5620,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTicketIdMaintenanceActivitiesId2",
     "operationId": "postAppIdTicketsTicketIdMaintenanceActivitiesId",
     "path": "/api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}",
@@ -5630,7 +5630,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTicketIdMaintenanceActivitiesId3",
     "operationId": "putAppIdTicketsTicketIdMaintenanceActivitiesId",
     "path": "/api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}",
@@ -5640,7 +5640,7 @@
     "destructive": false
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTicketIdMaintenanceActivitiesId4",
     "operationId": "deleteAppIdTicketsTicketIdMaintenanceActivitiesId",
     "path": "/api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}",
@@ -5650,7 +5650,7 @@
     "destructive": true
   },
   {
-    "domain": "referenceData",
+    "domain": "tickets",
     "methodName": "appIdTicketsTicketIdMaintenanceActivitiesIdFeed",
     "operationId": "getAppIdTicketsTicketIdMaintenanceActivitiesIdFeed",
     "path": "/api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}/feed",

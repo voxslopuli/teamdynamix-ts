@@ -34,7 +34,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "post": {
         "tags": ["Accounts"],
@@ -87,7 +88,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/accounts/search": {
@@ -134,7 +136,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/accounts/{id}": {
@@ -173,7 +176,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "put": {
         "tags": ["Accounts"],
@@ -227,7 +231,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/applications": {
@@ -257,7 +262,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "discovery"
       }
     },
     "/api/attachments/{id}": {
@@ -296,7 +302,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "delete": {
         "tags": ["Attachments"],
@@ -326,7 +333,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/attachments/{id}/content": {
@@ -358,7 +366,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/attachments/{id}/contentBase64": {
@@ -390,7 +399,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/attributes/custom": {
@@ -454,7 +464,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "post": {
         "tags": ["Attributes"],
@@ -1105,7 +1116,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       },
       "post": {
         "tags": ["Attributes"],
@@ -1175,7 +1187,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/attributes/{id}/choices/{choiceId}": {
@@ -1240,7 +1253,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       },
       "delete": {
         "tags": ["Attributes"],
@@ -1286,7 +1300,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/auth": {
@@ -1324,7 +1339,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "x-tdx-domain": "discovery"
       }
     },
     "/api/auth/getuser": {
@@ -1351,7 +1367,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "discovery"
       }
     },
     "/api/auth/login": {
@@ -1389,7 +1406,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "x-tdx-domain": "discovery"
       }
     },
     "/api/auth/loginadmin": {
@@ -1427,7 +1445,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "x-tdx-domain": "discovery"
       }
     },
     "/api/auth/loginsso": {
@@ -1448,7 +1467,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "x-tdx-domain": "discovery"
       }
     },
     "/api/dashboards/templates": {
@@ -1537,7 +1557,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       },
       "post": {
         "tags": ["Days Off"],
@@ -1893,7 +1914,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "delete": {
         "tags": ["Feed"],
@@ -2070,7 +2092,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/functionalroles/search": {
@@ -2117,7 +2140,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/functionalroles/{id}": {
@@ -2178,7 +2202,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/groups": {
@@ -2226,7 +2251,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/groups/search": {
@@ -2273,7 +2299,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "people"
       }
     },
     "/api/groups/{id}": {
@@ -2312,7 +2339,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "people"
       },
       "delete": {
         "tags": ["Groups"],
@@ -2406,7 +2434,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/groups/{id}/applications": {
@@ -2449,7 +2478,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "people"
       },
       "post": {
         "tags": ["Groups"],
@@ -2502,7 +2532,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       },
       "delete": {
         "tags": ["Groups"],
@@ -2555,7 +2586,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/groups/{id}/members": {
@@ -2598,7 +2630,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "people"
       },
       "post": {
         "tags": ["Groups"],
@@ -2681,7 +2714,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       },
       "delete": {
         "tags": ["Groups"],
@@ -2734,7 +2768,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/industries": {
@@ -2764,7 +2799,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "post": {
         "tags": ["Industries"],
@@ -2805,7 +2841,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/industries/{id}": {
@@ -2861,7 +2898,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/integrations/webhook": {
@@ -2893,7 +2931,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/integrations/{integrationId}/exclude/asset/{assetId}": {
@@ -2936,7 +2975,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "delete": {
         "tags": ["Integrations"],
@@ -2977,7 +3017,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/integrations/{integrationId}/exclude/assets": {
@@ -3027,7 +3068,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/integrations/{integrationId}/exclusions": {
@@ -3059,7 +3101,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/locations": {
@@ -3089,7 +3132,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "post": {
         "tags": ["Locations"],
@@ -3142,7 +3186,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/locations/search": {
@@ -3189,7 +3234,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/locations/{id}": {
@@ -3228,7 +3274,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "put": {
         "tags": ["Locations"],
@@ -3282,7 +3329,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "patch": {
         "tags": ["Locations"],
@@ -3445,7 +3493,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/locations/{id}/rooms/{roomId}": {
@@ -3560,7 +3609,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "put": {
         "tags": ["Locations"],
@@ -3625,7 +3675,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "delete": {
         "tags": ["Locations"],
@@ -3666,7 +3717,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/locations/{id}/rooms/{roomId}/consumables": {
@@ -3769,7 +3821,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/bulk/applydashboard/{templateDashboardId}": {
@@ -3843,7 +3896,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/bulk/applydesktop/{templateDesktopId}": {
@@ -3917,7 +3971,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/bulk/changeacctdepts": {
@@ -3958,7 +4013,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/bulk/changeactivestatus": {
@@ -4012,7 +4068,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/bulk/changeapplications": {
@@ -4053,7 +4110,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/bulk/changeapplicationsecurityrole": {
@@ -4135,7 +4193,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/bulk/changesecurityrole/{securityRoleId}": {
@@ -4190,7 +4249,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/bulk/changeusername": {
@@ -4355,7 +4415,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/bulk/removedashboard/{templateDashboardId}": {
@@ -4529,7 +4590,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/import": {
@@ -4604,7 +4666,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/lookup": {
@@ -4658,7 +4721,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/orgid/{orgId}": {
@@ -4737,7 +4801,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/search/paged": {
@@ -4885,7 +4950,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/{uid}": {
@@ -4925,7 +4991,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "people"
       },
       "post": {
         "tags": ["People"],
@@ -4985,7 +5052,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       },
       "patch": {
         "tags": ["People"],
@@ -5055,7 +5123,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/{uid}/changeusername": {
@@ -5303,7 +5372,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/{uid}/functionalroles/{roleId}": {
@@ -5361,7 +5431,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       },
       "delete": {
         "tags": ["People"],
@@ -5407,7 +5478,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/{uid}/groups": {
@@ -5455,7 +5527,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       },
       "post": {
         "tags": ["People"],
@@ -5518,7 +5591,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/{uid}/groups/{groupID}": {
@@ -5596,7 +5670,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       },
       "delete": {
         "tags": ["People"],
@@ -5642,7 +5717,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/{uid}/isactive": {
@@ -5690,7 +5766,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "people"
       }
     },
     "/api/people/{uid}/password": {
@@ -5769,7 +5846,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "projects"
       }
     },
     "/api/reports": {
@@ -5799,7 +5877,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/reports/search": {
@@ -5846,7 +5925,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/reports/{id}": {
@@ -5906,7 +5986,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/reports/{id}/data": {
@@ -6015,7 +6096,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/resourcepools/search": {
@@ -6062,7 +6144,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/resourcepools/{id}": {
@@ -6123,7 +6206,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/securityroles": {
@@ -6183,7 +6267,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/securityroles/permissions": {
@@ -6250,7 +6335,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/securityroles/search": {
@@ -6297,7 +6383,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/securityroles/{id}": {
@@ -6368,7 +6455,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       },
       "get": {
         "tags": ["Security Roles"],
@@ -6405,7 +6493,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/services/icons": {
@@ -6517,7 +6606,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/delete": {
@@ -6561,7 +6651,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/expenses": {
@@ -7105,7 +7196,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/report/{reportDate}": {
@@ -7144,7 +7236,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/report/{reportDate}/{uid}": {
@@ -7194,7 +7287,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/search": {
@@ -7241,7 +7335,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types": {
@@ -7271,7 +7366,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types/component/app/{appID}/project/{projectID}": {
@@ -7583,7 +7679,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       },
       "post": {
         "tags": ["Time"],
@@ -7643,7 +7740,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       },
       "delete": {
         "tags": ["Time"],
@@ -7703,7 +7801,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types/component/app/{appID}/ticket/{ticketID}/task/{taskID}": {
@@ -7769,7 +7868,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types/component/app/{appID}/timeoff/{projectID}": {
@@ -7878,7 +7978,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types/component/project/{projectID}/issue/{issueID}": {
@@ -7942,7 +8043,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types/component/project/{projectID}/plan/{planID}/task/{taskID}": {
@@ -8017,7 +8119,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types/component/request/{requestID}": {
@@ -8070,7 +8173,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types/component/timeoff/{projectID}": {
@@ -8123,7 +8227,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types/component/workspace/{workspaceID}": {
@@ -8166,7 +8271,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types/{id}": {
@@ -8205,7 +8311,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/types/{id}/limits/{uid}": {
@@ -8281,7 +8388,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/time/{id}": {
@@ -8320,7 +8428,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       },
       "put": {
         "tags": ["Time"],
@@ -8374,7 +8483,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       },
       "delete": {
         "tags": ["Time"],
@@ -8404,7 +8514,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "time"
       }
     },
     "/api/typecategories": {
@@ -8452,7 +8563,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       },
       "post": {
         "tags": ["Type Categories"],
@@ -8498,7 +8610,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/typecategories/{id}": {
@@ -8542,7 +8655,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       },
       "put": {
         "tags": ["Type Categories"],
@@ -8601,7 +8715,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/workspaces": {
@@ -9097,7 +9212,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/consumables": {
@@ -9768,7 +9884,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/contracts/search": {
@@ -9829,7 +9946,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/contracts/{id}": {
@@ -9880,7 +9998,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "put": {
         "tags": ["Contracts"],
@@ -9946,7 +10065,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/contracts/{id}/associatedassets": {
@@ -10001,7 +10121,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/contracts/{id}/associatedassets/{assetId}": {
@@ -10056,7 +10177,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "put": {
         "tags": ["Contracts"],
@@ -10126,7 +10248,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "delete": {
         "tags": ["Contracts"],
@@ -10179,7 +10302,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/contracts/{id}/attachments": {
@@ -10249,7 +10373,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/feed": {
@@ -10329,7 +10454,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/forms": {
@@ -10373,7 +10499,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/import": {
@@ -10434,7 +10561,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/intune/map": {
@@ -10484,7 +10612,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/assets/intune/{assetId}/map": {
@@ -10545,7 +10674,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/assets/models": {
@@ -10589,7 +10719,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "post": {
         "tags": ["Product Models"],
@@ -10654,7 +10785,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/models/search": {
@@ -10715,7 +10847,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/models/types": {
@@ -10759,7 +10892,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "post": {
         "tags": ["Product Types"],
@@ -10814,7 +10948,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/models/types/search": {
@@ -10875,7 +11010,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/models/types/{id}": {
@@ -10926,7 +11062,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "put": {
         "tags": ["Product Types"],
@@ -11002,7 +11139,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/models/{id}": {
@@ -11053,7 +11191,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "put": {
         "tags": ["Product Models"],
@@ -11119,7 +11258,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "patch": {
         "tags": ["Product Models"],
@@ -11246,7 +11386,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/search/paged": {
@@ -11369,7 +11510,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/{appId}/assets/searches/{searchId}/results": {
@@ -11437,7 +11579,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/{appId}/assets/statuses": {
@@ -11481,7 +11624,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "post": {
         "tags": ["Asset Statuses"],
@@ -11536,7 +11680,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/statuses/search": {
@@ -11597,7 +11742,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/statuses/{id}": {
@@ -11648,7 +11794,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "put": {
         "tags": ["Asset Statuses"],
@@ -11714,7 +11861,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/vendors": {
@@ -11758,7 +11906,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "post": {
         "tags": ["Vendors"],
@@ -11824,7 +11973,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/assets/vendors/search": {
@@ -11885,7 +12035,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/assets/vendors/{id}": {
@@ -11937,7 +12088,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "put": {
         "tags": ["Vendors"],
@@ -12004,7 +12156,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "patch": {
         "tags": ["Vendors"],
@@ -12126,7 +12279,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/{id}": {
@@ -12177,7 +12331,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "post": {
         "tags": ["Assets"],
@@ -12243,7 +12398,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "patch": {
         "tags": ["Assets"],
@@ -12309,7 +12465,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "delete": {
         "tags": ["Assets"],
@@ -12356,7 +12513,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/{id}/articles": {
@@ -12411,7 +12569,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/{id}/articles/{articleId}": {
@@ -12466,7 +12625,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "delete": {
         "tags": ["Assets"],
@@ -12519,7 +12679,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/{id}/associatedcontracts": {
@@ -12574,7 +12735,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/{id}/associatedcontracts/{contractId}": {
@@ -12629,7 +12791,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "put": {
         "tags": ["Assets"],
@@ -12699,7 +12862,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "delete": {
         "tags": ["Assets"],
@@ -12752,7 +12916,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/{id}/attachments": {
@@ -12822,7 +12987,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/{id}/attributes/{attributeId}/attachments": {
@@ -13009,7 +13175,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "post": {
         "tags": ["Assets"],
@@ -13068,7 +13235,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/{id}/tickets/{ticketId}": {
@@ -13123,7 +13291,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       },
       "delete": {
         "tags": ["Assets"],
@@ -13176,7 +13345,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/assets/{id}/users": {
@@ -13231,7 +13401,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "assets"
       }
     },
     "/api/{appId}/clientportal/styles": {
@@ -13383,7 +13554,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/forms": {
@@ -13427,7 +13599,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/maintenanceschedules": {
@@ -13471,7 +13644,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/maintenanceschedules/search": {
@@ -13532,7 +13706,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/maintenancewindows": {
@@ -13576,7 +13751,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "post": {
         "tags": ["Maintenance Windows"],
@@ -13631,7 +13807,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/maintenancewindows/search": {
@@ -13692,7 +13869,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/maintenancewindows/{id}": {
@@ -13743,7 +13921,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "put": {
         "tags": ["Maintenance Windows"],
@@ -13809,7 +13988,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/relationships/bulkadd": {
@@ -13859,7 +14039,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/relationships/bulkdelete": {
@@ -13909,7 +14090,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/relationshiptypes": {
@@ -13953,7 +14135,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "post": {
         "tags": ["Configuration Relationship Types"],
@@ -14008,7 +14191,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/relationshiptypes/search": {
@@ -14069,7 +14253,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/relationshiptypes/{id}": {
@@ -14120,7 +14305,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "put": {
         "tags": ["Configuration Relationship Types"],
@@ -14186,7 +14372,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/search": {
@@ -14247,7 +14434,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/search/paged": {
@@ -14370,7 +14558,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/searches/{searchId}/results": {
@@ -14438,7 +14627,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/types": {
@@ -14482,7 +14672,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "post": {
         "tags": ["Configuration Item Types"],
@@ -14537,7 +14728,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/types/search": {
@@ -14598,7 +14790,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/types/{id}": {
@@ -14649,7 +14842,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "put": {
         "tags": ["Configuration Item Types"],
@@ -14715,7 +14909,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/{id}": {
@@ -14766,7 +14961,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "put": {
         "tags": ["Configuration Items"],
@@ -14832,7 +15028,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "patch": {
         "tags": ["Configuration Items"],
@@ -14898,7 +15095,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "delete": {
         "tags": ["Configuration Items"],
@@ -14945,7 +15143,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/{id}/articles": {
@@ -15000,7 +15199,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/{id}/articles/{articleId}": {
@@ -15055,7 +15255,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "delete": {
         "tags": ["Configuration Items"],
@@ -15108,7 +15309,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/{id}/attachments": {
@@ -15178,7 +15380,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/{id}/attributes/{attributeId}/attachments": {
@@ -15314,7 +15517,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "post": {
         "tags": ["Configuration Items"],
@@ -15373,7 +15577,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/{id}/relationships": {
@@ -15428,7 +15633,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "put": {
         "tags": ["Configuration Items"],
@@ -15512,7 +15718,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/{id}/relationships/{relationshipId}": {
@@ -15567,7 +15774,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/{id}/tickets": {
@@ -15622,7 +15830,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/cmdb/{id}/tickets/{ticketId}": {
@@ -15677,7 +15886,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       },
       "delete": {
         "tags": ["Configuration Items"],
@@ -15730,7 +15940,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "cmdb"
       }
     },
     "/api/{appId}/dashboards/htmlmodules": {
@@ -16099,7 +16310,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       }
     },
     "/api/{appId}/knowledgebase/categories": {
@@ -16156,7 +16368,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       },
       "get": {
         "tags": ["Knowledge Base"],
@@ -16198,7 +16411,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       }
     },
     "/api/{appId}/knowledgebase/categories/{id}": {
@@ -16249,7 +16463,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       },
       "put": {
         "tags": ["Knowledge Base"],
@@ -16315,7 +16530,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       },
       "delete": {
         "tags": ["Knowledge Base"],
@@ -16357,7 +16573,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       }
     },
     "/api/{appId}/knowledgebase/search": {
@@ -16418,7 +16635,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       }
     },
     "/api/{appId}/knowledgebase/{id}": {
@@ -16469,7 +16687,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       },
       "put": {
         "tags": ["Knowledge Base"],
@@ -16535,7 +16754,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       },
       "patch": {
         "tags": ["Knowledge Base"],
@@ -16643,7 +16863,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       }
     },
     "/api/{appId}/knowledgebase/{id}/assetscis": {
@@ -16698,7 +16919,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       }
     },
     "/api/{appId}/knowledgebase/{id}/attachments": {
@@ -16768,7 +16990,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       }
     },
     "/api/{appId}/knowledgebase/{id}/related": {
@@ -16823,7 +17046,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       }
     },
     "/api/{appId}/knowledgebase/{id}/related/{relatedArticleId}": {
@@ -16878,7 +17102,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       },
       "delete": {
         "tags": ["Knowledge Base"],
@@ -16931,7 +17156,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "knowledgeBase"
       }
     },
     "/api/{appId}/knowledgebase/{id}/relatedservices": {
@@ -25265,7 +25491,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "post": {
         "tags": ["Service Catalog"],
@@ -25320,7 +25547,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/categories": {
@@ -25375,7 +25603,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "post": {
         "tags": ["Service Catalog"],
@@ -25430,7 +25659,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/categories/{id}": {
@@ -25481,7 +25711,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "put": {
         "tags": ["Service Catalog"],
@@ -25547,7 +25778,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "delete": {
         "tags": ["Service Catalog"],
@@ -25589,7 +25821,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/categories/{id}/permissions": {
@@ -25640,7 +25873,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "put": {
         "tags": ["Service Catalog"],
@@ -25706,7 +25940,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/offerings/search": {
@@ -25767,7 +26002,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/search": {
@@ -25828,7 +26064,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/{id}": {
@@ -25879,7 +26116,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "put": {
         "tags": ["Service Catalog"],
@@ -25945,7 +26183,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "patch": {
         "tags": ["Service Catalog"],
@@ -26053,7 +26292,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/{id}/attachments": {
@@ -26122,7 +26362,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/{id}/permissions": {
@@ -26173,7 +26414,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "put": {
         "tags": ["Service Catalog"],
@@ -26239,7 +26481,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/{id}/relatedarticles": {
@@ -26294,7 +26537,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/{id}/relatedarticles/{relatedArticleId}": {
@@ -26349,7 +26593,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "delete": {
         "tags": ["Service Catalog"],
@@ -26402,7 +26647,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/{serviceId}/offerings": {
@@ -26470,7 +26716,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/{serviceId}/offerings/{id}": {
@@ -26532,7 +26779,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "put": {
         "tags": ["Service Catalog"],
@@ -26608,7 +26856,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "patch": {
         "tags": ["Service Catalog"],
@@ -26738,7 +26987,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/{serviceId}/offerings/{id}/attachments": {
@@ -26819,7 +27069,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/{serviceId}/offerings/{id}/relatedarticles": {
@@ -26885,7 +27136,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/services/{serviceId}/offerings/{id}/relatedarticles/{relatedArticleId}": {
@@ -26951,7 +27203,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       },
       "delete": {
         "tags": ["Service Catalog"],
@@ -27015,7 +27268,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "services"
       }
     },
     "/api/{appId}/tickets": {
@@ -27140,7 +27394,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/automaticassignment": {
@@ -27351,7 +27606,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "get": {
         "tags": ["Blackout Windows"],
@@ -27393,7 +27649,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/blackoutwindows/search": {
@@ -27454,7 +27711,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/blackoutwindows/{id}": {
@@ -27522,7 +27780,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "get": {
         "tags": ["Blackout Windows"],
@@ -27571,7 +27830,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/feed": {
@@ -27651,7 +27911,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/forms": {
@@ -27695,7 +27956,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/impacts": {
@@ -27739,7 +28001,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/operationalhours": {
@@ -28085,7 +28348,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/resources": {
@@ -28140,7 +28404,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/responseTemplates": {
@@ -28205,7 +28470,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/search": {
@@ -28266,7 +28532,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/search/paged": {
@@ -28389,7 +28656,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/searches/{searchId}/results": {
@@ -28457,7 +28725,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/slas": {
@@ -28917,7 +29186,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/statuses": {
@@ -28961,7 +29231,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "post": {
         "tags": ["Ticket Statuses"],
@@ -29016,7 +29287,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/{appId}/tickets/statuses/search": {
@@ -29077,7 +29349,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/{appId}/tickets/statuses/{id}": {
@@ -29128,7 +29401,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       },
       "put": {
         "tags": ["Ticket Statuses"],
@@ -29194,7 +29468,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "referenceData"
       }
     },
     "/api/{appId}/tickets/templates": {
@@ -29358,7 +29633,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "post": {
         "tags": ["Ticket Types"],
@@ -29413,7 +29689,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/types/{id}": {
@@ -29464,7 +29741,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "put": {
         "tags": ["Ticket Types"],
@@ -29530,7 +29808,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/urgencies": {
@@ -29574,7 +29853,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}": {
@@ -29625,7 +29905,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "post": {
         "tags": ["Tickets"],
@@ -29701,7 +29982,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "patch": {
         "tags": ["Tickets"],
@@ -29777,7 +30059,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/application": {
@@ -29845,7 +30128,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/assets": {
@@ -29900,7 +30184,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       }
     },
     "/api/{appId}/tickets/{id}/assets/{assetId}": {
@@ -29955,7 +30240,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       },
       "delete": {
         "tags": ["Tickets"],
@@ -30008,7 +30294,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       }
     },
     "/api/{appId}/tickets/{id}/attachments": {
@@ -30088,7 +30375,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/attachments/bulk": {
@@ -30324,7 +30612,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/classification": {
@@ -30385,7 +30674,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/configurationItems": {
@@ -30440,7 +30730,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/configurationItems/{configurationItemId}": {
@@ -30495,7 +30786,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "delete": {
         "tags": ["Tickets"],
@@ -30548,7 +30840,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/consumables": {
@@ -30895,7 +31188,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       }
     },
     "/api/{appId}/tickets/{id}/contacts/{contactUid}": {
@@ -30950,7 +31244,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       },
       "delete": {
         "tags": ["Tickets"],
@@ -31003,7 +31298,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       }
     },
     "/api/{appId}/tickets/{id}/feed": {
@@ -31069,7 +31365,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "post": {
         "tags": ["Tickets"],
@@ -31128,7 +31425,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/relatedtickets": {
@@ -31359,7 +31657,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/sla/delete": {
@@ -31427,7 +31726,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/tags": {
@@ -31488,7 +31788,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "delete": {
         "tags": ["Tickets"],
@@ -31547,7 +31848,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/workflow": {
@@ -31619,7 +31921,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "delete": {
         "tags": ["Tickets"],
@@ -31717,7 +32020,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/workflow/actions": {
@@ -31783,7 +32087,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/workflow/approve": {
@@ -31851,7 +32156,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/workflow/reassign": {
@@ -31917,7 +32223,8 @@
           {
             "AdminBearer": []
           }
-        ]
+        ],
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{id}/workspaces": {
@@ -32044,7 +32351,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{ticketId}/MaintenanceActivities": {
@@ -32099,7 +32407,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "post": {
         "tags": ["Maintenance Activities"],
@@ -32165,7 +32474,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}": {
@@ -32227,7 +32537,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "put": {
         "tags": ["Maintenance Activities"],
@@ -32304,7 +32615,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "delete": {
         "tags": ["Maintenance Activities"],
@@ -32357,7 +32669,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       },
       "post": {
         "tags": ["Maintenance Activities"],
@@ -32427,7 +32740,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}/feed": {
@@ -32493,7 +32807,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "tickets"
       }
     },
     "/api/{appId}/tickets/{ticketId}/tasks": {
@@ -32558,7 +32873,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       },
       "post": {
         "tags": ["Ticket Tasks"],
@@ -32624,7 +32940,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       }
     },
     "/api/{appId}/tickets/{ticketId}/tasks/applytemplate": {
@@ -32758,7 +33075,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       },
       "put": {
         "tags": ["Ticket Tasks"],
@@ -32835,7 +33153,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       },
       "delete": {
         "tags": ["Ticket Tasks"],
@@ -32888,7 +33207,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       }
     },
     "/api/{appId}/tickets/{ticketId}/tasks/{id}/feed": {
@@ -32954,7 +33274,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       },
       "post": {
         "tags": ["Ticket Tasks"],
@@ -33024,7 +33345,8 @@
           "403": {
             "description": "Forbidden - Insufficient permissions"
           }
-        }
+        },
+        "x-tdx-domain": "ticketRelationships"
       }
     }
   },

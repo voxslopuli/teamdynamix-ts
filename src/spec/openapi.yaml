@@ -32,6 +32,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     post:
       tags:
         - Accounts
@@ -69,6 +70,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/accounts/search:
     post:
       tags:
@@ -106,6 +108,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/accounts/{id}:
     get:
       tags:
@@ -138,6 +141,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     put:
       tags:
         - Accounts
@@ -176,6 +180,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/applications:
     get:
       tags:
@@ -202,6 +207,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: discovery
   /api/attachments/{id}:
     get:
       tags:
@@ -231,6 +237,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     delete:
       tags:
         - Attachments
@@ -255,6 +262,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/attachments/{id}/content:
     get:
       tags:
@@ -280,6 +288,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/attachments/{id}/contentBase64:
     get:
       tags:
@@ -305,6 +314,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/attributes/custom:
     get:
       tags:
@@ -363,6 +373,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     post:
       tags:
         - Attributes
@@ -841,6 +852,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
     post:
       tags:
         - Attributes
@@ -889,6 +901,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
   /api/attributes/{id}/choices/{choiceId}:
     put:
       tags:
@@ -934,6 +947,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
     delete:
       tags:
         - Attributes
@@ -971,6 +985,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
   /api/auth:
     post:
       tags:
@@ -996,6 +1011,7 @@ paths:
               schema:
                 type: string
       security: []
+      x-tdx-domain: discovery
   /api/auth/getuser:
     get:
       tags:
@@ -1022,6 +1038,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: discovery
   /api/auth/login:
     post:
       tags:
@@ -1047,6 +1064,7 @@ paths:
               schema:
                 type: string
       security: []
+      x-tdx-domain: discovery
   /api/auth/loginadmin:
     post:
       tags:
@@ -1077,6 +1095,7 @@ paths:
               schema:
                 type: string
       security: []
+      x-tdx-domain: discovery
   /api/auth/loginsso:
     get:
       tags:
@@ -1092,6 +1111,7 @@ paths:
               schema:
                 type: string
       security: []
+      x-tdx-domain: discovery
   /api/dashboards/templates:
     get:
       tags:
@@ -1157,6 +1177,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
     post:
       tags:
         - Days Off
@@ -1416,6 +1437,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     delete:
       tags:
         - Feed
@@ -1552,6 +1574,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
   /api/functionalroles/search:
     post:
       tags:
@@ -1585,6 +1608,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/functionalroles/{id}:
     put:
       tags:
@@ -1626,6 +1650,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
   /api/groups:
     post:
       tags:
@@ -1658,6 +1683,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/groups/search:
     post:
       tags:
@@ -1691,6 +1717,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: people
   /api/groups/{id}:
     get:
       tags:
@@ -1720,6 +1747,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: people
     delete:
       tags:
         - Groups
@@ -1786,6 +1814,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/groups/{id}/applications:
     get:
       tags:
@@ -1818,6 +1847,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: people
     post:
       tags:
         - Groups
@@ -1860,6 +1890,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
     delete:
       tags:
         - Groups
@@ -1899,6 +1930,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/groups/{id}/members:
     get:
       tags:
@@ -1931,6 +1963,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: people
     post:
       tags:
         - Groups
@@ -1995,6 +2028,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
     delete:
       tags:
         - Groups
@@ -2034,6 +2068,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/industries:
     get:
       tags:
@@ -2057,6 +2092,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     post:
       tags:
         - Industries
@@ -2086,6 +2122,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/industries/{id}:
     put:
       tags:
@@ -2125,6 +2162,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/integrations/webhook:
     post:
       tags:
@@ -2153,6 +2191,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/integrations/{integrationId}/exclude/asset/{assetId}:
     post:
       tags:
@@ -2187,6 +2226,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     delete:
       tags:
         - Integrations
@@ -2217,6 +2257,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/integrations/{integrationId}/exclude/assets:
     post:
       tags:
@@ -2256,6 +2297,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/integrations/{integrationId}/exclusions:
     get:
       tags:
@@ -2279,6 +2321,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/locations:
     get:
       tags:
@@ -2307,6 +2350,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     post:
       tags:
         - Locations
@@ -2344,6 +2388,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/locations/search:
     post:
       tags:
@@ -2380,6 +2425,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/locations/{id}:
     get:
       tags:
@@ -2409,6 +2455,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     put:
       tags:
         - Locations
@@ -2447,6 +2494,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     patch:
       tags:
         - Locations
@@ -2569,6 +2617,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/locations/{id}/rooms/{roomId}:
     patch:
       tags:
@@ -2655,6 +2704,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     put:
       tags:
         - Locations
@@ -2701,6 +2751,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     delete:
       tags:
         - Locations
@@ -2733,6 +2784,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/locations/{id}/rooms/{roomId}/consumables:
     get:
       tags:
@@ -2814,6 +2866,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/bulk/applydashboard/{templateDashboardId}:
     post:
       tags:
@@ -2870,6 +2923,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/bulk/applydesktop/{templateDesktopId}:
     post:
       tags:
@@ -2926,6 +2980,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/bulk/changeacctdepts:
     post:
       tags:
@@ -2958,6 +3013,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/bulk/changeactivestatus:
     post:
       tags:
@@ -2997,6 +3053,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/bulk/changeapplications:
     post:
       tags:
@@ -3030,6 +3087,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/bulk/changeapplicationsecurityrole:
     post:
       tags:
@@ -3096,6 +3154,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/bulk/changesecurityrole/{securityRoleId}:
     post:
       tags:
@@ -3139,6 +3198,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/bulk/changeusername:
     post:
       tags:
@@ -3275,6 +3335,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/bulk/removedashboard/{templateDashboardId}:
     delete:
       tags:
@@ -3419,6 +3480,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: people
   /api/people/import:
     post:
       tags:
@@ -3488,6 +3550,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/lookup:
     get:
       tags:
@@ -3533,6 +3596,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: people
   /api/people/orgid/{orgId}:
     get:
       tags:
@@ -3600,6 +3664,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: people
   /api/people/search/paged:
     post:
       tags:
@@ -3711,6 +3776,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/{uid}:
     get:
       tags:
@@ -3746,6 +3812,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: people
     post:
       tags:
         - People
@@ -3810,6 +3877,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
     patch:
       tags:
         - People
@@ -3891,6 +3959,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/{uid}/changeusername:
     post:
       tags:
@@ -4086,6 +4155,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/{uid}/functionalroles/{roleId}:
     put:
       tags:
@@ -4131,6 +4201,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
     delete:
       tags:
         - People
@@ -4165,6 +4236,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/{uid}/groups:
     get:
       tags:
@@ -4199,6 +4271,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
     post:
       tags:
         - People
@@ -4245,6 +4318,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/{uid}/groups/{groupID}:
     put:
       tags:
@@ -4305,6 +4379,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
     delete:
       tags:
         - People
@@ -4339,6 +4414,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/{uid}/isactive:
     put:
       tags:
@@ -4374,6 +4450,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: people
   /api/people/{uid}/password:
     post:
       tags:
@@ -4432,6 +4509,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: projects
   /api/reports:
     get:
       tags:
@@ -4455,6 +4533,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/reports/search:
     post:
       tags:
@@ -4488,6 +4567,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/reports/{id}:
     get:
       tags:
@@ -4535,6 +4615,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/reports/{id}/data:
     post:
       tags:
@@ -4612,6 +4693,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
   /api/resourcepools/search:
     post:
       tags:
@@ -4645,6 +4727,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/resourcepools/{id}:
     put:
       tags:
@@ -4686,6 +4769,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
   /api/securityroles:
     post:
       tags:
@@ -4726,6 +4810,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
   /api/securityroles/permissions:
     get:
       tags:
@@ -4773,6 +4858,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/securityroles/search:
     post:
       tags:
@@ -4806,6 +4892,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/securityroles/{id}:
     put:
       tags:
@@ -4854,6 +4941,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
     get:
       tags:
         - Security Roles
@@ -4882,6 +4970,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/services/icons:
     get:
       tags:
@@ -4985,6 +5074,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/delete:
     post:
       tags:
@@ -5022,6 +5112,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/expenses:
     post:
       tags:
@@ -5439,6 +5530,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/report/{reportDate}:
     get:
       tags:
@@ -5470,6 +5562,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/report/{reportDate}/{uid}:
     get:
       tags:
@@ -5513,6 +5606,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/search:
     post:
       tags:
@@ -5551,6 +5645,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types:
     get:
       tags:
@@ -5574,6 +5669,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types/component/app/{appID}/project/{projectID}:
     get:
       tags:
@@ -5823,6 +5919,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
     post:
       tags:
         - Time
@@ -5873,6 +5970,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
     delete:
       tags:
         - Time
@@ -5922,6 +6020,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types/component/app/{appID}/ticket/{ticketID}/task/{taskID}:
     get:
       tags:
@@ -5975,6 +6074,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types/component/app/{appID}/timeoff/{projectID}:
     get:
       tags:
@@ -6059,6 +6159,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types/component/project/{projectID}/issue/{issueID}:
     get:
       tags:
@@ -6109,6 +6210,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types/component/project/{projectID}/plan/{planID}/task/{taskID}:
     get:
       tags:
@@ -6167,6 +6269,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types/component/request/{requestID}:
     get:
       tags:
@@ -6209,6 +6312,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types/component/timeoff/{projectID}:
     get:
       tags:
@@ -6248,6 +6352,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types/component/workspace/{workspaceID}:
     get:
       tags:
@@ -6283,6 +6388,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types/{id}:
     get:
       tags:
@@ -6312,6 +6418,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/types/{id}/limits/{uid}:
     get:
       tags:
@@ -6371,6 +6478,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/time/{id}:
     get:
       tags:
@@ -6400,6 +6508,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
     put:
       tags:
         - Time
@@ -6441,6 +6550,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
     delete:
       tags:
         - Time
@@ -6468,6 +6578,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: time
   /api/typecategories:
     get:
       tags:
@@ -6502,6 +6613,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
     post:
       tags:
         - Type Categories
@@ -6533,6 +6645,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
   /api/typecategories/{id}:
     get:
       tags:
@@ -6564,6 +6677,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
     put:
       tags:
         - Type Categories
@@ -6604,6 +6718,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: referenceData
   /api/workspaces:
     get:
       tags:
@@ -7004,6 +7119,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/consumables:
     post:
       tags:
@@ -7516,6 +7632,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/contracts/search:
     post:
       tags:
@@ -7563,6 +7680,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/contracts/{id}:
     get:
       tags:
@@ -7601,6 +7719,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     put:
       tags:
         - Contracts
@@ -7651,6 +7770,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/contracts/{id}/associatedassets:
     get:
       tags:
@@ -7692,6 +7812,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/contracts/{id}/associatedassets/{assetId}:
     post:
       tags:
@@ -7737,6 +7858,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     put:
       tags:
         - Contracts
@@ -7791,6 +7913,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     delete:
       tags:
         - Contracts
@@ -7835,6 +7958,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/contracts/{id}/attachments:
     post:
       tags:
@@ -7889,6 +8013,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/feed:
     get:
       tags:
@@ -7949,6 +8074,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/forms:
     get:
       tags:
@@ -7982,6 +8108,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/import:
     post:
       tags:
@@ -8025,6 +8152,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/intune/map:
     put:
       tags:
@@ -8067,6 +8195,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/assets/intune/{assetId}/map:
     put:
       tags:
@@ -8115,6 +8244,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/assets/models:
     get:
       tags:
@@ -8151,6 +8281,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     post:
       tags:
         - Product Models
@@ -8197,6 +8328,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/models/search:
     post:
       tags:
@@ -8243,6 +8375,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/models/types:
     get:
       tags:
@@ -8276,6 +8409,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     post:
       tags:
         - Product Types
@@ -8315,6 +8449,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/models/types/search:
     post:
       tags:
@@ -8358,6 +8493,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/models/types/{id}:
     get:
       tags:
@@ -8396,6 +8532,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     put:
       tags:
         - Product Types
@@ -8450,6 +8587,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/models/{id}:
     get:
       tags:
@@ -8488,6 +8626,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     put:
       tags:
         - Product Models
@@ -8535,6 +8674,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     patch:
       tags:
         - Product Models
@@ -8632,6 +8772,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/search/paged:
     post:
       tags:
@@ -8725,6 +8866,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/{appId}/assets/searches/{searchId}/results:
     post:
       tags:
@@ -8776,6 +8918,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/{appId}/assets/statuses:
     get:
       tags:
@@ -8809,6 +8952,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     post:
       tags:
         - Asset Statuses
@@ -8851,6 +8995,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/statuses/search:
     post:
       tags:
@@ -8894,6 +9039,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/statuses/{id}:
     get:
       tags:
@@ -8932,6 +9078,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     put:
       tags:
         - Asset Statuses
@@ -8982,6 +9129,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/vendors:
     get:
       tags:
@@ -9019,6 +9167,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     post:
       tags:
         - Vendors
@@ -9066,6 +9215,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/assets/vendors/search:
     post:
       tags:
@@ -9113,6 +9263,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/assets/vendors/{id}:
     get:
       tags:
@@ -9152,6 +9303,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     put:
       tags:
         - Vendors
@@ -9200,6 +9352,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     patch:
       tags:
         - Vendors
@@ -9293,6 +9446,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/{id}:
     get:
       tags:
@@ -9331,6 +9485,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     post:
       tags:
         - Assets
@@ -9378,6 +9533,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     patch:
       tags:
         - Assets
@@ -9428,6 +9584,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     delete:
       tags:
         - Assets
@@ -9463,6 +9620,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: assets
   /api/{appId}/assets/{id}/articles:
     get:
       tags:
@@ -9504,6 +9662,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/{id}/articles/{articleId}:
     post:
       tags:
@@ -9546,6 +9705,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     delete:
       tags:
         - Assets
@@ -9587,6 +9747,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/{id}/associatedcontracts:
     get:
       tags:
@@ -9628,6 +9789,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/{id}/associatedcontracts/{contractId}:
     post:
       tags:
@@ -9673,6 +9835,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     put:
       tags:
         - Assets
@@ -9727,6 +9890,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     delete:
       tags:
         - Assets
@@ -9771,6 +9935,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/{id}/attachments:
     post:
       tags:
@@ -9822,6 +9987,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/{id}/attributes/{attributeId}/attachments:
     post:
       tags:
@@ -9971,6 +10137,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     post:
       tags:
         - Assets
@@ -10014,6 +10181,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/{id}/tickets/{ticketId}:
     post:
       tags:
@@ -10056,6 +10224,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
     delete:
       tags:
         - Assets
@@ -10097,6 +10266,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/assets/{id}/users:
     get:
       tags:
@@ -10138,6 +10308,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: assets
   /api/{appId}/clientportal/styles:
     get:
       tags:
@@ -10253,6 +10424,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/forms:
     get:
       tags:
@@ -10286,6 +10458,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/maintenanceschedules:
     get:
       tags:
@@ -10319,6 +10492,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/maintenanceschedules/search:
     post:
       tags:
@@ -10362,6 +10536,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/maintenancewindows:
     get:
       tags:
@@ -10395,6 +10570,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     post:
       tags:
         - Maintenance Windows
@@ -10434,6 +10610,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/maintenancewindows/search:
     post:
       tags:
@@ -10477,6 +10654,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/maintenancewindows/{id}:
     get:
       tags:
@@ -10515,6 +10693,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     put:
       tags:
         - Maintenance Windows
@@ -10562,6 +10741,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/relationships/bulkadd:
     post:
       tags:
@@ -10598,6 +10778,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/relationships/bulkdelete:
     post:
       tags:
@@ -10634,6 +10815,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/relationshiptypes:
     get:
       tags:
@@ -10667,6 +10849,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     post:
       tags:
         - Configuration Relationship Types
@@ -10706,6 +10889,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/relationshiptypes/search:
     post:
       tags:
@@ -10749,6 +10933,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/relationshiptypes/{id}:
     get:
       tags:
@@ -10787,6 +10972,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     put:
       tags:
         - Configuration Relationship Types
@@ -10834,6 +11020,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/search:
     post:
       tags:
@@ -10881,6 +11068,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/search/paged:
     post:
       tags:
@@ -10974,6 +11162,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/searches/{searchId}/results:
     post:
       tags:
@@ -11025,6 +11214,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/types:
     get:
       tags:
@@ -11061,6 +11251,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     post:
       tags:
         - Configuration Item Types
@@ -11100,6 +11291,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/types/search:
     post:
       tags:
@@ -11143,6 +11335,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/types/{id}:
     get:
       tags:
@@ -11181,6 +11374,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     put:
       tags:
         - Configuration Item Types
@@ -11228,6 +11422,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/{id}:
     get:
       tags:
@@ -11266,6 +11461,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     put:
       tags:
         - Configuration Items
@@ -11313,6 +11509,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     patch:
       tags:
         - Configuration Items
@@ -11363,6 +11560,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     delete:
       tags:
         - Configuration Items
@@ -11398,6 +11596,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/{id}/articles:
     get:
       tags:
@@ -11439,6 +11638,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/{id}/articles/{articleId}:
     post:
       tags:
@@ -11481,6 +11681,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     delete:
       tags:
         - Configuration Items
@@ -11522,6 +11723,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/{id}/attachments:
     post:
       tags:
@@ -11576,6 +11778,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/{id}/attributes/{attributeId}/attachments:
     post:
       tags:
@@ -11690,6 +11893,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     post:
       tags:
         - Configuration Items
@@ -11733,6 +11937,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/{id}/relationships:
     get:
       tags:
@@ -11774,6 +11979,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     put:
       tags:
         - Configuration Items
@@ -11840,6 +12046,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/{id}/relationships/{relationshipId}:
     delete:
       tags:
@@ -11882,6 +12089,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/{id}/tickets:
     get:
       tags:
@@ -11923,6 +12131,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/cmdb/{id}/tickets/{ticketId}:
     post:
       tags:
@@ -11965,6 +12174,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
     delete:
       tags:
         - Configuration Items
@@ -12006,6 +12216,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: cmdb
   /api/{appId}/dashboards/htmlmodules:
     get:
       tags:
@@ -12286,6 +12497,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
   /api/{appId}/knowledgebase/categories:
     post:
       tags:
@@ -12330,6 +12542,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
     get:
       tags:
         - Knowledge Base
@@ -12362,6 +12575,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
   /api/{appId}/knowledgebase/categories/{id}:
     get:
       tags:
@@ -12400,6 +12614,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
     put:
       tags:
         - Knowledge Base
@@ -12454,6 +12669,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
     delete:
       tags:
         - Knowledge Base
@@ -12487,6 +12703,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
   /api/{appId}/knowledgebase/search:
     post:
       tags:
@@ -12535,6 +12752,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
   /api/{appId}/knowledgebase/{id}:
     get:
       tags:
@@ -12573,6 +12791,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
     put:
       tags:
         - Knowledge Base
@@ -12623,6 +12842,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
     patch:
       tags:
         - Knowledge Base
@@ -12707,6 +12927,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
   /api/{appId}/knowledgebase/{id}/assetscis:
     get:
       tags:
@@ -12748,6 +12969,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
   /api/{appId}/knowledgebase/{id}/attachments:
     post:
       tags:
@@ -12799,6 +13021,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
   /api/{appId}/knowledgebase/{id}/related:
     get:
       tags:
@@ -12840,6 +13063,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
   /api/{appId}/knowledgebase/{id}/related/{relatedArticleId}:
     post:
       tags:
@@ -12882,6 +13106,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
     delete:
       tags:
         - Knowledge Base
@@ -12923,6 +13148,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: knowledgeBase
   /api/{appId}/knowledgebase/{id}/relatedservices:
     get:
       tags:
@@ -19427,6 +19653,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     post:
       tags:
         - Service Catalog
@@ -19470,6 +19697,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/categories:
     get:
       tags:
@@ -19515,6 +19743,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     post:
       tags:
         - Service Catalog
@@ -19558,6 +19787,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/categories/{id}:
     get:
       tags:
@@ -19596,6 +19826,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     put:
       tags:
         - Service Catalog
@@ -19651,6 +19882,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     delete:
       tags:
         - Service Catalog
@@ -19687,6 +19919,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/categories/{id}/permissions:
     get:
       tags:
@@ -19728,6 +19961,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     put:
       tags:
         - Service Catalog
@@ -19778,6 +20012,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/offerings/search:
     post:
       tags:
@@ -19826,6 +20061,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/search:
     post:
       tags:
@@ -19874,6 +20110,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/{id}:
     get:
       tags:
@@ -19912,6 +20149,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     put:
       tags:
         - Service Catalog
@@ -19963,6 +20201,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     patch:
       tags:
         - Service Catalog
@@ -20051,6 +20290,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/{id}/attachments:
     post:
       tags:
@@ -20104,6 +20344,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/{id}/permissions:
     get:
       tags:
@@ -20145,6 +20386,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     put:
       tags:
         - Service Catalog
@@ -20195,6 +20437,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/{id}/relatedarticles:
     get:
       tags:
@@ -20236,6 +20479,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/{id}/relatedarticles/{relatedArticleId}:
     post:
       tags:
@@ -20282,6 +20526,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     delete:
       tags:
         - Service Catalog
@@ -20326,6 +20571,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/{serviceId}/offerings:
     post:
       tags:
@@ -20377,6 +20623,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/{serviceId}/offerings/{id}:
     get:
       tags:
@@ -20423,6 +20670,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     put:
       tags:
         - Service Catalog
@@ -20480,6 +20728,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     patch:
       tags:
         - Service Catalog
@@ -20582,6 +20831,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/{serviceId}/offerings/{id}/attachments:
     post:
       tags:
@@ -20644,6 +20894,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/{serviceId}/offerings/{id}/relatedarticles:
     get:
       tags:
@@ -20693,6 +20944,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/services/{serviceId}/offerings/{id}/relatedarticles/{relatedArticleId}:
     post:
       tags:
@@ -20747,6 +20999,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
     delete:
       tags:
         - Service Catalog
@@ -20799,6 +21052,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: services
   /api/{appId}/tickets:
     post:
       tags:
@@ -20905,6 +21159,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/automaticassignment:
     get:
       tags:
@@ -21068,6 +21323,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     get:
       tags:
         - Blackout Windows
@@ -21100,6 +21356,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/blackoutwindows/search:
     post:
       tags:
@@ -21143,6 +21400,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/blackoutwindows/{id}:
     put:
       tags:
@@ -21191,6 +21449,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     get:
       tags:
         - Blackout Windows
@@ -21228,6 +21487,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/feed:
     get:
       tags:
@@ -21288,6 +21548,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/forms:
     get:
       tags:
@@ -21321,6 +21582,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/impacts:
     get:
       tags:
@@ -21354,6 +21616,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/operationalhours:
     get:
       tags:
@@ -21623,6 +21886,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/resources:
     get:
       tags:
@@ -21664,6 +21928,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/responseTemplates:
     get:
       tags:
@@ -21712,6 +21977,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/search:
     post:
       tags:
@@ -21763,6 +22029,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/search/paged:
     post:
       tags:
@@ -21860,6 +22127,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/searches/{searchId}/results:
     post:
       tags:
@@ -21913,6 +22181,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/slas:
     get:
       tags:
@@ -22264,6 +22533,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/statuses:
     get:
       tags:
@@ -22297,6 +22567,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     post:
       tags:
         - Ticket Statuses
@@ -22339,6 +22610,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/{appId}/tickets/statuses/search:
     post:
       tags:
@@ -22382,6 +22654,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/{appId}/tickets/statuses/{id}:
     get:
       tags:
@@ -22420,6 +22693,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
     put:
       tags:
         - Ticket Statuses
@@ -22470,6 +22744,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: referenceData
   /api/{appId}/tickets/templates:
     get:
       tags:
@@ -22593,6 +22868,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     post:
       tags:
         - Ticket Types
@@ -22632,6 +22908,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/types/{id}:
     get:
       tags:
@@ -22670,6 +22947,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     put:
       tags:
         - Ticket Types
@@ -22717,6 +22995,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/urgencies:
     get:
       tags:
@@ -22750,6 +23029,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}:
     get:
       tags:
@@ -22788,6 +23068,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     post:
       tags:
         - Tickets
@@ -22846,6 +23127,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     patch:
       tags:
         - Tickets
@@ -22904,6 +23186,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/application:
     post:
       tags:
@@ -22956,6 +23239,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/assets:
     get:
       tags:
@@ -23000,6 +23284,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
   /api/{appId}/tickets/{id}/assets/{assetId}:
     post:
       tags:
@@ -23042,6 +23327,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
     delete:
       tags:
         - Tickets
@@ -23083,6 +23369,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
   /api/{appId}/tickets/{id}/attachments:
     post:
       tags:
@@ -23141,6 +23428,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/attachments/bulk:
     post:
       tags:
@@ -23318,6 +23606,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/classification:
     put:
       tags:
@@ -23367,6 +23656,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/configurationItems:
     get:
       tags:
@@ -23411,6 +23701,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/configurationItems/{configurationItemId}:
     post:
       tags:
@@ -23453,6 +23744,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     delete:
       tags:
         - Tickets
@@ -23494,6 +23786,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/consumables:
     get:
       tags:
@@ -23744,6 +24037,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
   /api/{appId}/tickets/{id}/contacts/{contactUid}:
     post:
       tags:
@@ -23786,6 +24080,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
     delete:
       tags:
         - Tickets
@@ -23827,6 +24122,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
   /api/{appId}/tickets/{id}/feed:
     get:
       tags:
@@ -23887,6 +24183,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     post:
       tags:
         - Tickets
@@ -23930,6 +24227,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/relatedtickets:
     get:
       tags:
@@ -24107,6 +24405,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/sla/delete:
     put:
       tags:
@@ -24159,6 +24458,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/tags:
     post:
       tags:
@@ -24205,6 +24505,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     delete:
       tags:
         - Tickets
@@ -24250,6 +24551,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/workflow:
     put:
       tags:
@@ -24303,6 +24605,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     delete:
       tags:
         - Tickets
@@ -24377,6 +24680,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/workflow/actions:
     get:
       tags:
@@ -24426,6 +24730,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/workflow/approve:
     post:
       tags:
@@ -24474,6 +24779,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/workflow/reassign:
     post:
       tags:
@@ -24520,6 +24826,7 @@ paths:
           description: Forbidden - Insufficient permissions
       security:
         - AdminBearer: []
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{id}/workspaces:
     get:
       tags:
@@ -24613,6 +24920,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{ticketId}/MaintenanceActivities:
     get:
       tags:
@@ -24654,6 +24962,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     post:
       tags:
         - Maintenance Activities
@@ -24704,6 +25013,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}:
     get:
       tags:
@@ -24750,6 +25060,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     put:
       tags:
         - Maintenance Activities
@@ -24805,6 +25116,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     delete:
       tags:
         - Maintenance Activities
@@ -24846,6 +25158,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
     post:
       tags:
         - Maintenance Activities
@@ -24897,6 +25210,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{ticketId}/MaintenanceActivities/{id}/feed:
     get:
       tags:
@@ -24957,6 +25271,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: tickets
   /api/{appId}/tickets/{ticketId}/tasks:
     get:
       tags:
@@ -25005,6 +25320,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
     post:
       tags:
         - Ticket Tasks
@@ -25055,6 +25371,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
   /api/{appId}/tickets/{ticketId}/tasks/applytemplate:
     post:
       tags:
@@ -25155,6 +25472,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
     put:
       tags:
         - Ticket Tasks
@@ -25210,6 +25528,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
     delete:
       tags:
         - Ticket Tasks
@@ -25254,6 +25573,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
   /api/{appId}/tickets/{ticketId}/tasks/{id}/feed:
     get:
       tags:
@@ -25314,6 +25634,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
     post:
       tags:
         - Ticket Tasks
@@ -25365,6 +25686,7 @@ paths:
           description: Unauthorized - Authentication required
         '403':
           description: Forbidden - Insufficient permissions
+      x-tdx-domain: ticketRelationships
 components:
   schemas:
     Account:

@@ -184,15 +184,18 @@ describe('Custom Attributes', () => {
   describe('Custom Attribute Registry', () => {
     it('can get ticket custom attribute definitions', async () => {
       server.use(
-        http.get('https://api.teamdynamix.com/api/1/tickets/customattributes', () =>
-          HttpResponse.json(
+        http.get('https://api.teamdynamix.com/api/attributes/custom', ({ request }) => {
+          const url = new URL(request.url);
+          expect(url.searchParams.get('componentId')).toBe('9');
+          expect(url.searchParams.get('appId')).toBe('1');
+          return HttpResponse.json(
             [
               { ID: 1, Name: 'Priority', DataType: 'Text', IsRequired: false },
               { ID: 2, Name: 'Category', DataType: 'Dropdown', IsRequired: true },
             ],
             { status: 200 },
-          ),
-        ),
+          );
+        }),
       );
 
       const { client } = await createTeamDynamixClient({
@@ -211,15 +214,18 @@ describe('Custom Attributes', () => {
 
     it('can get asset custom attribute definitions', async () => {
       server.use(
-        http.get('https://api.teamdynamix.com/api/1/assets/customattributes', () =>
-          HttpResponse.json(
+        http.get('https://api.teamdynamix.com/api/attributes/custom', ({ request }) => {
+          const url = new URL(request.url);
+          expect(url.searchParams.get('componentId')).toBe('27');
+          expect(url.searchParams.get('appId')).toBe('1');
+          return HttpResponse.json(
             [
               { ID: 10, Name: 'Location', DataType: 'Text', IsRequired: false },
               { ID: 11, Name: 'Owner', DataType: 'Person', IsRequired: true },
             ],
             { status: 200 },
-          ),
-        ),
+          );
+        }),
       );
 
       const { client } = await createTeamDynamixClient({

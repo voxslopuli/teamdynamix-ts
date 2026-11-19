@@ -7,11 +7,11 @@ describe('SDK curated mutator coverage', () => {
   it('normalizes issue search payload and enforces comments on issue update', async () => {
     const seen: Array<{ method: string; url: string; body: unknown }> = [];
     server.use(
-      http.post('https://api.teamdynamix.com/api/projects/issues/search', ({ request }) => {
+      http.post('https://api.teamdynamix.com/api/1/projects/issues/search', ({ request }) => {
         seen.push({ method: 'POST', url: String(request.url), body: null });
         return HttpResponse.json([{ id: 1 }], { status: 200 });
       }),
-      http.post('https://api.teamdynamix.com/api/projects/9/issues/11', ({ request }) => {
+      http.post('https://api.teamdynamix.com/api/1/projects/9/issues/11', ({ request }) => {
         seen.push({ method: 'POST', url: String(request.url), body: null });
         return HttpResponse.json({ id: 11, updated: true }, { status: 200 });
       }),
@@ -24,17 +24,18 @@ describe('SDK curated mutator coverage', () => {
       runtimeValidationMode: 'fail-open',
     });
 
-    await expect(client.projects.searchIssues({ projectId: 9 })).resolves.toEqual([{ id: 1 }]);
+    await expect(client.projects.searchIssues({ appId: 1, projectId: 9 })).resolves.toEqual([{ id: 1 }]);
 
     await expect(
       client.projects.updateIssue({
+        appId: 1,
         projectId: 9,
         issueId: 11,
       }),
     ).resolves.toEqual({ id: 11, updated: true });
 
     expect(seen[0]?.url).toContain('ProjectIDs=9');
-    expect(seen[1]?.url).toContain('/api/projects/9/issues/11');
+    expect(seen[1]?.url).toContain('/api/1/projects/9/issues/11');
   });
 
   it('exposes people group helpers and bulk manage helper', async () => {
@@ -117,10 +118,10 @@ describe('SDK curated mutator coverage', () => {
       http.put('https://api.teamdynamix.com/api/1/knowledgebase/401', () =>
         HttpResponse.json({ id: 401, updated: true }, { status: 200 }),
       ),
-      http.post('https://api.teamdynamix.com/api/projects/issues', () =>
+      http.post('https://api.teamdynamix.com/api/1/projects/issues', () =>
         HttpResponse.json({ id: 501 }, { status: 200 }),
       ),
-      http.post('https://api.teamdynamix.com/api/projects/risks', () =>
+      http.post('https://api.teamdynamix.com/api/1/projects/risks', () =>
         HttpResponse.json({ id: 601 }, { status: 200 }),
       ),
       http.post('https://api.teamdynamix.com/api/1/services', () => HttpResponse.json({ id: 701 }, { status: 200 })),
@@ -247,8 +248,8 @@ describe('SDK curated mutator coverage', () => {
       updated: true,
     });
 
-    expect(await client.projects.createIssue({ body: { Title: 'i' } })).toEqual({ id: 501 });
-    expect(await client.projects.createRisk({ body: { Title: 'r' } })).toEqual({
+    expect(await client.projects.createIssue({ appId: 1, body: { Title: 'i' } })).toEqual({ id: 501 });
+    expect(await client.projects.createRisk({ appId: 1, body: { Title: 'r' } })).toEqual({
       id: 601,
     });
 

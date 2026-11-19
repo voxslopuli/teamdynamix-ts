@@ -101,13 +101,18 @@ export interface KnowledgeBaseMutations {
 }
 
 export interface ProjectMutations {
-  createIssue(input: { body: unknown }): Promise<unknown>;
-  createRisk(input: { body: unknown }): Promise<unknown>;
-  searchIssues(input: { projectId: string | number; body?: Record<string, unknown> }): Promise<unknown>;
+  createIssue(input: { appId: string | number; body: unknown }): Promise<unknown>;
+  createRisk(input: { appId: string | number; body: unknown }): Promise<unknown>;
+  searchIssues(input: {
+    appId: string | number;
+    projectId: string | number;
+    body?: Record<string, unknown>;
+  }): Promise<unknown>;
   updateIssue(input: {
+    appId: string | number;
     projectId: string | number;
     issueId: string | number;
-    comments: string;
+    comments?: string;
     body?: Record<string, unknown>;
   }): Promise<unknown>;
 }

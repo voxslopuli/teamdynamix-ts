@@ -66,7 +66,9 @@ const normalizeMethodName = (operationId: string, method: string, pathKey: strin
 const mapDomain = (pathKey: string, tags: string[]): SdkDomainName => {
   const hasTag = (value: string): boolean => tags.includes(value);
 
-  if (pathKey.startsWith('/api/auth') || hasTag('Applications')) return 'discovery';
+  if (pathKey.startsWith('/api/auth') || pathKey === '/api/applications' || hasTag('Applications')) {
+    return 'discovery';
+  }
   if (
     pathKey.includes('/tickets/{id}/assets') ||
     pathKey.includes('/tickets/{id}/contacts') ||
@@ -161,7 +163,12 @@ for (const [pathKey, pathItem] of Object.entries(spec.paths ?? {})) {
     }
     const tags = operation.tags ?? [];
     const operationId = operation.operationId ?? `${method}${pathKey.replace(/[^a-zA-Z0-9]/g, '')}`;
-    const domain = mapDomain(pathKey, tags);
+    // x-tdx-domain: compat override injected by update-spec-from-live.ts so
+    // regenerated specs keep the domain buckets existing consumers rely on.
+    const domain =
+      typeof operation['x-tdx-domain'] === 'string' && DOMAIN_ORDER.includes(operation['x-tdx-domain'] as SdkDomainName)
+        ? (operation['x-tdx-domain'] as SdkDomainName)
+        : mapDomain(pathKey, tags);
     const baseMethodName = normalizeMethodName(operationId, method.toUpperCase(), pathKey);
     const key = `${domain}:${baseMethodName}`;
     const collisionCount = usedMethodNames.get(key) ?? 0;
@@ -184,6 +191,16 @@ const readManifest = routeManifest.filter(route => route.httpMethod === 'GET');
 
 // nosemgrep: javascript.lang.security.detect-non-literal-fs-filename
 fs.writeFileSync(sdkRouteManifestPath, JSON.stringify(routeManifest, null, 2));
+
+// Full-route TS manifest: every HTTP method, not just reads. The SDK client
+// exposes all operations as domain methods (POST routes included).
+const fullManifestTs = `import type { SdkRouteDefinition } from '../client/sdk/types.js';\n\nexport const SDK_ROUTE_MANIFEST = ${JSON.stringify(
+  routeManifest,
+  null,
+  2,
+)} satisfies ReadonlyArray<SdkRouteDefinition>;\n`;
+// nosemgrep: javascript.lang.security.detect-non-literal-fs-filename
+fs.writeFileSync(path.join(generatedDir, 'sdk-routes.ts'), fullManifestTs);
 
 const readManifestTs = `import type { SdkRouteDefinition } from '../client/sdk/types.js';\n\nexport const SDK_READ_ROUTE_MANIFEST = ${JSON.stringify(
   readManifest,

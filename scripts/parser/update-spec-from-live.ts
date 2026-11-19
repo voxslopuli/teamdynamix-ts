@@ -94,6 +94,7 @@ for (const [pathKey, pathItem] of Object.entries(live.paths ?? {})) {
     const compat = compatByRoute.get(`${method.toUpperCase()} ${pathKey}`);
     if (compat) {
       operation['operationId'] = compat.operationId; // preserve methodName exactly
+      (operation as Record<string, unknown>)['x-tdx-domain'] = compat.domain; // preserve domain bucket
       kept += 1;
     } else {
       let candidate = synthesizeOperationId(method, pathKey);

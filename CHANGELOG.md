@@ -1,3 +1,11 @@
+## v0.3.2 - 2026-11-20
+
+- fix: runtime schema validation no longer throws per call when a route's published schema cannot compile — the live API publishes `FeedItemType` with duplicate alias values ("Ticket Task"/"Maintenance Activity" both 25), which made Ajv reject the feed-route response schema and killed every `get_ticket_feed` call under fail-closed validation (#22 symptom 1). Uncompilable schemas are now skipped with a one-time stderr warning
+- fix: spec regeneration dedupes enum value arrays in the live doc (2 duplicates removed) so the shipped spec compiles cleanly
+- verified: path-prefixed base URLs (e.g. `https://host/TDWebApi`) join correctly in the SDK client — regression test added with the route reaching `.../TDWebApi/api/{appId}/tickets/search`
+
+**Full Changelog**: https://github.com/voxslopuli/teamdynamix-ts/compare/v0.3.1...v0.3.2
+
 ## v0.3.0 - 2026-11-18
 
 - feat: SDK regenerated from the live deployment OpenAPI spec (#13) — 256 new operations, 74 removed, 322 preserved with byte-identical method names

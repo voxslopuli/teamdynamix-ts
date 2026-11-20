@@ -14594,31 +14594,7 @@ export interface components {
      *     | Portfolio Risk | 84 | A portfolio risk. |
      * @enum {integer}
      */
-    FeedItemType:
-      | 0
-      | 1
-      | 1
-      | 2
-      | 3
-      | 4
-      | 6
-      | 7
-      | 9
-      | 15
-      | 24
-      | 25
-      | 25
-      | 26
-      | 27
-      | 43
-      | 45
-      | 47
-      | 57
-      | 62
-      | 63
-      | 72
-      | 83
-      | 84;
+    FeedItemType: 0 | 1 | 2 | 3 | 4 | 6 | 7 | 9 | 15 | 24 | 25 | 26 | 27 | 43 | 45 | 47 | 57 | 62 | 63 | 72 | 83 | 84;
     /** @description Encapsulates the parameters for adding a reply to a feed entry via the API. */
     FeedReplyRequest: {
       /** @description The body of the reply. Interpreted as rich HTML. */

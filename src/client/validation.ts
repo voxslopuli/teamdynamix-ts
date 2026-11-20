@@ -54,14 +54,24 @@ export class OpenApiRuntimeValidator {
   private compileRequestValidator(schemaPath: string, method: string): ValidateFunction | undefined {
     const key = `${method.toUpperCase()} ${schemaPath}`;
     const existing = this.requestValidators.get(key);
-    if (existing) return existing;
+    if (existing !== undefined) return existing;
 
     const operation = this.operationFor(schemaPath, method);
     if (!operation) return undefined;
     const schema = getJsonSchema(operation.requestBody?.content);
     if (!schema) return undefined;
 
-    const validator = this.ajv.compile(schema);
+    let validator: ValidateFunction | undefined;
+    try {
+      validator = this.ajv.compile(schema);
+    } catch (error) {
+      // Spec quirks (e.g. duplicate enum members the live API itself publishes)
+      // must not break every call to a route: skip validation for it and let
+      // the data through, warning once.
+      this.warnSkip(`${method.toUpperCase()} ${schemaPath} request`, error);
+      this.requestValidators.set(key, undefined as unknown as ValidateFunction);
+      return undefined;
+    }
     this.requestValidators.set(key, validator);
     return validator;
   }
@@ -69,10 +79,13 @@ export class OpenApiRuntimeValidator {
   private compileResponseValidator(schemaPath: string, method: string, status: number): ValidateFunction | undefined {
     const key = `${method.toUpperCase()} ${schemaPath} ${status}`;
     const existing = this.responseValidators.get(key);
-    if (existing) return existing;
+    if (existing !== undefined) return existing;
 
     const operation = this.operationFor(schemaPath, method);
-    if (!operation?.responses) return undefined;
+    if (!operation?.responses) {
+      this.responseValidators.set(key, undefined as unknown as ValidateFunction);
+      return undefined;
+    }
 
     let response: { content?: Record<string, { schema?: unknown }> } | undefined;
     const statusKey = String(status);
@@ -86,14 +99,38 @@ export class OpenApiRuntimeValidator {
       }
     }
 
-    if (!response) return undefined;
+    if (!response) {
+      this.responseValidators.set(key, undefined as unknown as ValidateFunction);
+      return undefined;
+    }
 
     const schema = getJsonSchema(response.content);
-    if (!schema) return undefined;
+    if (!schema) {
+      this.responseValidators.set(key, undefined as unknown as ValidateFunction);
+      return undefined;
+    }
 
-    const validator = this.ajv.compile(schema);
+    let validator: ValidateFunction | undefined;
+    try {
+      validator = this.ajv.compile(schema);
+    } catch (error) {
+      this.warnSkip(`${method.toUpperCase()} ${schemaPath} ${status} response`, error);
+      this.responseValidators.set(key, undefined as unknown as ValidateFunction);
+      return undefined;
+    }
     this.responseValidators.set(key, validator);
     return validator;
+  }
+
+  private warnedRoutes = new Set<string>();
+  private warnSkip(key: string, cause: unknown): void {
+    if (this.warnedRoutes.has(key)) return;
+    this.warnedRoutes.add(key);
+    console.error(
+      `[teamdynamix-ts] schema for ${key} could not be compiled (runtime validation skipped for this route): ${
+        cause instanceof Error ? cause.message : String(cause)
+      }`,
+    );
   }
 
   validateRequest(schemaPath: string, method: string, body: unknown): { valid: boolean; errors?: unknown } {

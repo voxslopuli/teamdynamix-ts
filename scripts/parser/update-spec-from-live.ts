@@ -228,9 +228,52 @@ for (const [pathKey, pathItem] of Object.entries(live.paths ?? {})) {
 
 sanitizeNullable(live);
 
+// Deduplicate enum value arrays — the live API publishes alias names mapping
+// to the same value (FeedItemType: "Ticket Task"/"Maintenance Activity" both
+// 25), which strict JSON-Schema validators reject outright (issue #22).
+let enumDedupes = 0;
+const dedupeEnums = (node: unknown): void => {
+  if (Array.isArray(node)) {
+    node.forEach(dedupeEnums);
+    return;
+  }
+  if (node === null || typeof node !== 'object') return;
+  const obj = node as Record<string, unknown>;
+  const values = obj['enum'];
+  if (Array.isArray(values)) {
+    const seenVals = new Set<string>();
+    const keep = new Set<number>();
+    values.forEach((v, i) => {
+      const k = JSON.stringify(v);
+      if (seenVals.has(k)) {
+        keep.delete(i);
+        enumDedupes += 1;
+      }
+      seenVals.add(k);
+    });
+    // keep.delete only registers removal for later indices; rebuild cleanly
+    const deduped = values.filter(
+      (v, i) => seenVals.has(JSON.stringify(v)) && i === values.findIndex(x => JSON.stringify(x) === JSON.stringify(v)),
+    );
+    if (deduped.length !== values.length) {
+      obj['enum'] = deduped;
+      const names = obj['x-enumNames'];
+      if (Array.isArray(names) && names.length === values.length) {
+        obj['x-enumNames'] = names.filter((_, i) => deduped.includes(values[i]));
+      }
+      const descs = obj['x-enumDescriptions'];
+      if (Array.isArray(descs) && descs.length === values.length) {
+        obj['x-enumDescriptions'] = descs.filter((_, i) => deduped.includes(values[i]));
+      }
+    }
+  }
+  for (const value of Object.values(obj)) dedupeEnums(value);
+};
+dedupeEnums(live);
+
 fs.mkdirSync(path.dirname(outSpecPath), { recursive: true });
 fs.writeFileSync(outSpecPath, yaml.dump(live, { lineWidth: 240, noRefs: true }), 'utf8');
 
 console.log(
-  `Spec updated: ${liveRoutes.size} live routes (${kept} compat-named, ${synthesized} synthesized), ${removedOld} old routes dropped, ${nullableDrops} invalid nullable fields dropped, ${losers.length} param-ambiguous paths dropped, ${defaultMoves} parameter defaults relocated, ${paramRenames} parameter names aligned, ${paramSynth} missing path parameters synthesized.`,
+  `Spec updated: ${liveRoutes.size} live routes (${kept} compat-named, ${synthesized} synthesized), ${removedOld} old routes dropped, ${nullableDrops} invalid nullable fields dropped, ${losers.length} param-ambiguous paths dropped, ${defaultMoves} parameter defaults relocated, ${paramRenames} parameter names aligned, ${paramSynth} missing path parameters synthesized, ${enumDedupes} duplicate enum values removed.`,
 );
